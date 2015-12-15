@@ -15,6 +15,9 @@
 		4C18C8951C1B7E2B006FBB13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C18C8931C1B7E2B006FBB13 /* LaunchScreen.storyboard */; };
 		4C18C8A01C1B7E2B006FBB13 /* DCTriOffSeasonSpinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C18C89F1C1B7E2B006FBB13 /* DCTriOffSeasonSpinTests.swift */; };
 		4C18C8AB1C1B7E2B006FBB13 /* DCTriOffSeasonSpinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C18C8AA1C1B7E2B006FBB13 /* DCTriOffSeasonSpinUITests.swift */; };
+		4C2770441C1F9F86005D12ED /* TimerCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2770431C1F9F86005D12ED /* TimerCollectionController.swift */; };
+		4C2770461C1FA091005D12ED /* TimerCollectionCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2770451C1FA091005D12ED /* TimerCollectionCells.swift */; };
+		4C2770481C1FA0BB005D12ED /* WorkoutSets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2770471C1FA0BB005D12ED /* WorkoutSets.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,9 @@
 		4C18C8A61C1B7E2B006FBB13 /* DCTriOffSeasonSpinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DCTriOffSeasonSpinUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C18C8AA1C1B7E2B006FBB13 /* DCTriOffSeasonSpinUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DCTriOffSeasonSpinUITests.swift; sourceTree = "<group>"; };
 		4C18C8AC1C1B7E2B006FBB13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C2770431C1F9F86005D12ED /* TimerCollectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerCollectionController.swift; sourceTree = "<group>"; };
+		4C2770451C1FA091005D12ED /* TimerCollectionCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerCollectionCells.swift; sourceTree = "<group>"; };
+		4C2770471C1FA0BB005D12ED /* WorkoutSets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutSets.swift; sourceTree = "<group>"; };
 		6CE03498506DDE5AB8864C5C /* Pods_DCTriOffSeasonSpin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DCTriOffSeasonSpin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C07B4328147E6B0B4F7A961B /* Pods-DCTriOffSeasonSpin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DCTriOffSeasonSpin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DCTriOffSeasonSpin/Pods-DCTriOffSeasonSpin.debug.xcconfig"; sourceTree = "<group>"; };
 		EAFBC06522E5DFA671795703 /* Pods-DCTriOffSeasonSpin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DCTriOffSeasonSpin.release.xcconfig"; path = "Pods/Target Support Files/Pods-DCTriOffSeasonSpin/Pods-DCTriOffSeasonSpin.release.xcconfig"; sourceTree = "<group>"; };
@@ -110,6 +116,9 @@
 				4C18C8911C1B7E2B006FBB13 /* Assets.xcassets */,
 				4C18C8931C1B7E2B006FBB13 /* LaunchScreen.storyboard */,
 				4C18C8961C1B7E2B006FBB13 /* Info.plist */,
+				4C2770431C1F9F86005D12ED /* TimerCollectionController.swift */,
+				4C2770451C1FA091005D12ED /* TimerCollectionCells.swift */,
+				4C2770471C1FA0BB005D12ED /* WorkoutSets.swift */,
 			);
 			path = DCTriOffSeasonSpin;
 			sourceTree = "<group>";
@@ -331,7 +340,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C2770481C1FA0BB005D12ED /* WorkoutSets.swift in Sources */,
 				4C18C88D1C1B7E2B006FBB13 /* ViewController.swift in Sources */,
+				4C2770461C1FA091005D12ED /* TimerCollectionCells.swift in Sources */,
+				4C2770441C1F9F86005D12ED /* TimerCollectionController.swift in Sources */,
 				4C18C88B1C1B7E2B006FBB13 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
