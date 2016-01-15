@@ -8,6 +8,7 @@
 
 import Foundation
 import SnapKit
+import MBCircularProgressBar
 
 class TimerCollectionCells: UICollectionViewCell {
     static let fontSize:CGFloat = 28.0
@@ -108,6 +109,20 @@ class TimerCollectionCells: UICollectionViewCell {
         return label
     }()
     
+    private lazy var progressView:MBCircularProgressBarView = {
+       let progressView = MBCircularProgressBarView(frame: .zero)
+        progressView.progressAngle = 75
+        progressView.progressLineWidth = 15
+        progressView.progressColor = UIColor.whiteColor()
+        progressView.progressStrokeColor = UIColor.whiteColor()
+        progressView.backgroundColor = UIColor.clearColor()
+        progressView.fontColor = UIColor.whiteColor()
+        progressView.unitString = "%"
+        
+        self.contentView.addSubview(progressView)
+        return progressView
+    }()
+    
     override func updateConstraints() {
         secondsLabel.snp_updateConstraints { (make) -> Void in
             make.center.equalTo(self.contentView)
@@ -133,17 +148,29 @@ class TimerCollectionCells: UICollectionViewCell {
             make.top.equalTo(heartRateZoneLabel.snp_bottom).offset(5)
         }
         
-        notes.snp_updateConstraints { (make) -> Void in
+//        notes.snp_updateConstraints { (make) -> Void in
+//            make.centerX.equalTo(self.contentView)
+//            make.bottom.equalTo(self.contentView).offset(-5)
+//        }
+        progressView.snp_updateConstraints { (make) -> Void in
             make.centerX.equalTo(self.contentView)
             make.bottom.equalTo(self.contentView).offset(-5)
+            make.width.equalTo(200)
+            make.height.equalTo(self.progressView.snp_width)
         }
+        
         super.updateConstraints()
     }
+    
+    var maxValue:CGFloat = 0
     
     func startTimer() {
         contentView.backgroundColor = UIColor.blueColor()
         if !timer.valid{ //prevent more than one timer on the thread
-            timeCount = 3.0
+            timeCount = 5.0
+            progressView.maxValue = 100
+            maxValue = CGFloat(timeCount)
+            progressView.value = 0
             setTimerLabels()
             timer = NSTimer.scheduledTimerWithTimeInterval(timeInterval,
                 target: self,
@@ -155,6 +182,17 @@ class TimerCollectionCells: UICollectionViewCell {
         updateConstraintsIfNeeded()
     }
     
+    func resetTimer() {
+        timer = NSTimer()
+        timeCount = 5.0
+        setTimerLabels()
+        timer = NSTimer.scheduledTimerWithTimeInterval(timeInterval,
+            target: self,
+            selector: "timerDidEnd:",
+            userInfo: "Timer Done!!",
+            repeats: true) //repeating timer in the second iteration
+    }
+    
     func stopTimer() {
         timer.invalidate()
     }
@@ -162,11 +200,12 @@ class TimerCollectionCells: UICollectionViewCell {
     func timerDidEnd(timer:NSTimer){
         timeCount = timeCount - timeInterval
         if timeCount <= 0 {  //test for target time reached.
-            addDoneLabel()
+            //addDoneLabel()
             NSNotificationCenter.defaultCenter().postNotificationName(kNotificationIdentifierForward, object: nil)
             timer.invalidate()
         } else { //update the time on the clock if not reached
             setTimerLabels()
+            progressView.value = (CGFloat(timeCount)/maxValue)*100
         }
     }
     

@@ -55,6 +55,7 @@
 		4C2770431C1F9F86005D12ED /* TimerCollectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerCollectionController.swift; sourceTree = "<group>"; };
 		4C2770451C1FA091005D12ED /* TimerCollectionCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerCollectionCells.swift; sourceTree = "<group>"; };
 		4C2770471C1FA0BB005D12ED /* WorkoutSets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutSets.swift; sourceTree = "<group>"; };
+		4C9FC77C1C4893D900188166 /* DCTriOffSeasonSpin-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DCTriOffSeasonSpin-Header.h"; sourceTree = "<group>"; };
 		4CFC61BD1C48796F000B4061 /* HelperFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperFunctions.swift; sourceTree = "<group>"; };
 		6CE03498506DDE5AB8864C5C /* Pods_DCTriOffSeasonSpin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DCTriOffSeasonSpin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C07B4328147E6B0B4F7A961B /* Pods-DCTriOffSeasonSpin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DCTriOffSeasonSpin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DCTriOffSeasonSpin/Pods-DCTriOffSeasonSpin.debug.xcconfig"; sourceTree = "<group>"; };
@@ -122,6 +123,7 @@
 				4C2770451C1FA091005D12ED /* TimerCollectionCells.swift */,
 				4C2770471C1FA0BB005D12ED /* WorkoutSets.swift */,
 				4CFC61BD1C48796F000B4061 /* HelperFunctions.swift */,
+				4C9FC77C1C4893D900188166 /* DCTriOffSeasonSpin-Header.h */,
 			);
 			path = DCTriOffSeasonSpin;
 			sourceTree = "<group>";
@@ -444,6 +446,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				"SWIFT_OPTIMIZATION_LEVEL[arch=*]" = "-Onone";
 			};
 			name = Debug;
 		};
@@ -493,6 +496,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = WeddingWire.DCTriOffSeasonSpin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DCTriOffSeasonSpin/DCTriOffSeasonSpin-Header.h";
 			};
 			name = Debug;
 		};
@@ -505,6 +509,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = WeddingWire.DCTriOffSeasonSpin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DCTriOffSeasonSpin/DCTriOffSeasonSpin-Header.h";
 			};
 			name = Release;
 		};

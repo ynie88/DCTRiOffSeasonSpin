@@ -1,10 +1,13 @@
 PODS:
+  - MBCircularProgressBar (0.3.4)
   - SnapKit (0.18.0)
 
 DEPENDENCIES:
+  - MBCircularProgressBar
   - SnapKit (~> 0.18.0)
 
 SPEC CHECKSUMS:
+  MBCircularProgressBar: ff3b8e2f441214d9ee122a24ba0d4d00cc7de881
   SnapKit: e1f090a6d47b1dd4bd89b73f72b6746a7835ef3c
 
 COCOAPODS: 0.39.0

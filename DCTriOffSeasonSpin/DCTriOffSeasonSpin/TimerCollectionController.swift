@@ -34,16 +34,21 @@ class TimerCollectionController:UICollectionViewController {
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(timerClassReuseID, forIndexPath: indexPath) as! TimerCollectionCells
         cell.startTimer()
-        if indexPath.row == 1{
+        if indexPath.row % 3 == 0{
             cell.contentView.backgroundColor = UIColor.blackColor()
-        } else if indexPath.row == 2 {
-            cell.contentView.backgroundColor = UIColor.greenColor()
+        } else if indexPath.row % 2 == 0 {
+            cell.contentView.backgroundColor = UIColor.redColor()
         }
         return cell
     }
     
+    override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        currentIndex++
+        self.collectionView?.scrollToItemAtIndexPath(NSIndexPath(forRow: currentIndex, inSection: 0), atScrollPosition: UICollectionViewScrollPosition.CenteredHorizontally, animated: true)
+    }
+    
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3
+        return 4
     }
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
@@ -52,7 +57,9 @@ class TimerCollectionController:UICollectionViewController {
     
     func shiftOne() {
         currentIndex++
-        self.collectionView?.scrollToItemAtIndexPath(NSIndexPath(forRow: currentIndex, inSection: 0), atScrollPosition: UICollectionViewScrollPosition.CenteredHorizontally, animated: true)
+        if currentIndex < collectionView?.numberOfItemsInSection(0){
+            self.collectionView?.scrollToItemAtIndexPath(NSIndexPath(forRow: currentIndex, inSection: 0), atScrollPosition: UICollectionViewScrollPosition.CenteredHorizontally, animated: true)
+        }
     }
     
 }

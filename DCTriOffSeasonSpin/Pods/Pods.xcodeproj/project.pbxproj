@@ -7,103 +7,173 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0D631FD61A330C4A3CD86F851ACAB093 /* Pods-DCTriOffSeasonSpin-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A9D30F83D05FA9299A46B95A36836D9 /* Pods-DCTriOffSeasonSpin-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1CF45AD3D7587C135517FF6CFC9CE7D9 /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B869919EAC3B1E5EF05B0107B595C13C /* LayoutConstraint.swift */; };
-		266B51A16F0F26046582A5DAD4A88F07 /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7ED5648C0C88C2BBB8B1737D3C811DF /* ConstraintItem.swift */; };
-		321C2F30EC43BB59D4C325BF014E0AA0 /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3061A45F7542E986BCB23EBBD8AD4A13 /* ConstraintDescription.swift */; };
-		391D570859072A3D3B10A0B1C9FF9062 /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415D45FAC3D162C8D3F9CFE592F79E42 /* Debugging.swift */; };
-		39C2D92C3A0390F8D3325AB0C664FB3B /* ViewController+SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A877C5C14A8B495ECAB69BE839FFA44 /* ViewController+SnapKit.swift */; };
-		613668CF4277135AB80270B44811C480 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		6D7890E72C93FE6AC48C205D5A3E9624 /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFB846E6A499B21514C1E298F56DE3B /* ConstraintAttributes.swift */; };
-		701BBC70BC5E72C4091D67870AD02929 /* EdgeInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C496DA4CA3F61B29BB063F74876C70 /* EdgeInsets.swift */; };
-		7202848C5CAF7A1A40BE1D6507ADC046 /* SnapKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 17ED37A4D4337C9AC445D07BA9E09051 /* SnapKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		730485B80BB411BB09D44215BB4C0610 /* SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA1CFBED61FB63BBC905CD3AFEE402C /* SnapKit.swift */; };
-		8C427672DFE564B344DCBBBCFB093703 /* SnapKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 079E5EE3CDB090004C84E658BC83AEB7 /* SnapKit-dummy.m */; };
-		AA533673B30ADB489332DF0D03CAE80D /* Pods-DCTriOffSeasonSpin-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C4823B4DDC71FD208F78C60A5A85C43D /* Pods-DCTriOffSeasonSpin-dummy.m */; };
-		B5BFF4C79033BC24051FD2B8F295F284 /* View+SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BB547CA6D4862CCE70A4B51F1EABAE /* View+SnapKit.swift */; };
-		CA7F5819CE1BD1C2CE1F420E997700E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		D4BF2FD9D5536AFFC22CAD599DE3FF6F /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03EFFB295211A70F01FAD48D41DF5F3 /* ConstraintMaker.swift */; };
-		E396DE5437FB621F3E505F3F0F57EE35 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C745F502C842A223464EC61885F02BB /* Constraint.swift */; };
-		EB5F25EA942901DD95B1009E801AC781 /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DD83C2BF9A16815558CBFACD79C938 /* ConstraintRelation.swift */; };
+		057137E901A8C814D4D2DEE188B5C2B1 /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977C96CC43EF9502BBC016D52E5F1DF8 /* ConstraintAttributes.swift */; };
+		0C81589DBD4C2F5738090636A0230170 /* SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF34903D40D971AE3A7E1E204A7C20B2 /* SnapKit.swift */; };
+		11E092529EA40CF795D9807E7BB9CFBC /* EdgeInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D9B181D725A6036B75FE4D1E03D5BA /* EdgeInsets.swift */; };
+		2069416FF6A7E86AEFCF1E44BF29FA92 /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954E43A0FF8E5E083DE91A85822AFD3C /* Debugging.swift */; };
+		2B95200755F4983D22E37C984284F956 /* MBCircularProgressBarLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = E1F61D30D6ABFE3752B10E776DF4EF10 /* MBCircularProgressBarLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F522E7B2A4A9DFD43C47A2929E57180 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		312121025328BE24E60F20E6B1DF8E01 /* SnapKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 462AF80F565CEE8395739E323F66577C /* SnapKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		44B12DCF6CB8E0875C494A258A91E835 /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED4B2FF4B9B41F4525948F1F097618E /* ConstraintRelation.swift */; };
+		6447B5362DD395075EB2433CEE8C21D4 /* MBCircularProgressBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46A20B6996ED69C5FF01C27CFD8952CF /* MBCircularProgressBarView.m */; };
+		64F73DF54872E3D8782675C3018E70A2 /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A793B5A6FA5F36E66BB187AFACE15094 /* ConstraintItem.swift */; };
+		6AA00500F66B0705C25D33A1AC6DD780 /* Pods-DCTriOffSeasonSpin-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A9D30F83D05FA9299A46B95A36836D9 /* Pods-DCTriOffSeasonSpin-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80E68DA3EA59AA44F6D6DD7E8C101697 /* SnapKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8905BA0A1A80999FE89134C22805A7E6 /* SnapKit-dummy.m */; };
+		8546F815857BF9C93440151A864EB626 /* MBCircularProgressBar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A145486DBC4D294340244F3FB1303132 /* MBCircularProgressBar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		86C96CE9BF21B8D10756F22C071EFBC5 /* MBCircularProgressBar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BC9FBD9DB22103AB79D0E2E2E27B65B7 /* MBCircularProgressBar-dummy.m */; };
+		8BD092DF0AA60503F51210F2413FAFFC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		AAB596FD05E0DE5ACA32D59ADCB2296A /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0561A71DB51CD443B33A4309A4F22A53 /* ConstraintDescription.swift */; };
+		ACE6FB38839BEB0A5FA06603C76E5E04 /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6087F1011393E110E06A3788384EA3A /* ConstraintMaker.swift */; };
+		AF2519979CEEE23427285309CF346086 /* View+SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CBAD74677AEA4ACB99B60759636BAA /* View+SnapKit.swift */; };
+		B263A8BA4FDD8B8BDCCE75C6F413C2C9 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C298B57B7B754C3FCE1CC3D567906646 /* Constraint.swift */; };
+		B3A2D07FA6B139E8C7FDA1DB717F57E0 /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEF94EAED79421E250BB79BC0315B6E /* LayoutConstraint.swift */; };
+		BABA548714C8F0E66412A23371A923FD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		BB5DC0D981AED3867EC1FC46474D2709 /* ViewController+SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A7DEF927ED41986915C3ECBBE03633 /* ViewController+SnapKit.swift */; };
+		BE1BB0CF10216E4F3C36AC156726E365 /* Pods-DCTriOffSeasonSpin-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C4823B4DDC71FD208F78C60A5A85C43D /* Pods-DCTriOffSeasonSpin-dummy.m */; };
+		E912798811F25351DFFFCFEF1B153B2A /* MBCircularProgressBarLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 48932F1928ED73714F376D8F5318726D /* MBCircularProgressBarLayer.m */; };
+		EB70BEA373CD78800BE63150747CE860 /* MBCircularProgressBarView.h in Headers */ = {isa = PBXBuildFile; fileRef = B4BECEDCBB426050A40466DD309B355A /* MBCircularProgressBarView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F88D157974522F8674E5DFA82F8B0A2A /* MBCircularProgressBar.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 92B71F6E92B8E059E16858094B5DBBEE /* MBCircularProgressBar.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		28F5544CF337243A09FD9DFF3E089CDD /* PBXContainerItemProxy */ = {
+		7420A8F1F0CFAEB7D4E6F955A03E5122 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 6EB00EC32048872586230F1C70D26D8A;
+			remoteGlobalIDString = 860A9179BCFD9F1C616D8653DB2B4F91;
+			remoteInfo = MBCircularProgressBar;
+		};
+		99989AB1D783B0B6D559B25E08AA38DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0EE4D1733C9CEB7623956542D8238528;
 			remoteInfo = SnapKit;
+		};
+		EBC59F00882F35808CD4B15930E9008E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8FC4B2785BB68892651401B8A26A15AD;
+			remoteInfo = "MBCircularProgressBar-MBCircularProgressBar";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0523FE48D43A3EF1950FDC12E59223BF /* Pods-DCTriOffSeasonSpin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DCTriOffSeasonSpin.release.xcconfig"; sourceTree = "<group>"; };
-		079E5EE3CDB090004C84E658BC83AEB7 /* SnapKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SnapKit-dummy.m"; sourceTree = "<group>"; };
-		17ED37A4D4337C9AC445D07BA9E09051 /* SnapKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-umbrella.h"; sourceTree = "<group>"; };
-		1A877C5C14A8B495ECAB69BE839FFA44 /* ViewController+SnapKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ViewController+SnapKit.swift"; path = "Source/ViewController+SnapKit.swift"; sourceTree = "<group>"; };
-		1EA1CFBED61FB63BBC905CD3AFEE402C /* SnapKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SnapKit.swift; path = Source/SnapKit.swift; sourceTree = "<group>"; };
+		052D59431FAD79ADBE92FA03D251A0B6 /* MBCircularProgressBar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBCircularProgressBar.xcconfig; sourceTree = "<group>"; };
+		0561A71DB51CD443B33A4309A4F22A53 /* ConstraintDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDescription.swift; path = Source/ConstraintDescription.swift; sourceTree = "<group>"; };
+		07AF07721B31676ED1C163F3D0A78B67 /* Pods_DCTriOffSeasonSpin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DCTriOffSeasonSpin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A7CDC9C48EAE2E3E70D7C22D1063C51 /* Pods-DCTriOffSeasonSpin-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DCTriOffSeasonSpin-acknowledgements.plist"; sourceTree = "<group>"; };
 		2A9D30F83D05FA9299A46B95A36836D9 /* Pods-DCTriOffSeasonSpin-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DCTriOffSeasonSpin-umbrella.h"; sourceTree = "<group>"; };
 		2D92210EA2CB16AB4250B080CD17F7DD /* Pods-DCTriOffSeasonSpin-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DCTriOffSeasonSpin-frameworks.sh"; sourceTree = "<group>"; };
-		3061A45F7542E986BCB23EBBD8AD4A13 /* ConstraintDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDescription.swift; path = Source/ConstraintDescription.swift; sourceTree = "<group>"; };
-		3A16E5765B0E23F051BF436AB1D1C62A /* Pods_DCTriOffSeasonSpin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DCTriOffSeasonSpin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		30991400D10412761F468CAB4CD18B6A /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		37FC21C1EDB78CF0852D0F8C57E7F2EE /* MBCircularProgressBar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBCircularProgressBar-prefix.pch"; sourceTree = "<group>"; };
 		3B70AE326D04AF9EE2E1FC9B620E5062 /* Pods-DCTriOffSeasonSpin.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-DCTriOffSeasonSpin.modulemap"; sourceTree = "<group>"; };
+		3CB9EF1CA7A54D5BFA66FEC005E5D973 /* MBCircularProgressBar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MBCircularProgressBar.modulemap; sourceTree = "<group>"; };
 		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		3FFD7A1DE5DAA64B98EE5D1E26896AA8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		415D45FAC3D162C8D3F9CFE592F79E42 /* Debugging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debugging.swift; path = Source/Debugging.swift; sourceTree = "<group>"; };
-		495929FB6F57FC07CF2233838AD92579 /* SnapKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-prefix.pch"; sourceTree = "<group>"; };
-		55BB547CA6D4862CCE70A4B51F1EABAE /* View+SnapKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "View+SnapKit.swift"; path = "Source/View+SnapKit.swift"; sourceTree = "<group>"; };
-		56B1FCA085C2AC4CDCEB52E3588F26EB /* SnapKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SnapKit.modulemap; sourceTree = "<group>"; };
+		453FEC6E349E826CBA5B946193F6418F /* SnapKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-prefix.pch"; sourceTree = "<group>"; };
+		462AF80F565CEE8395739E323F66577C /* SnapKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-umbrella.h"; sourceTree = "<group>"; };
+		46A20B6996ED69C5FF01C27CFD8952CF /* MBCircularProgressBarView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MBCircularProgressBarView.m; path = Pod/Classes/MBCircularProgressBarView.m; sourceTree = "<group>"; };
+		48932F1928ED73714F376D8F5318726D /* MBCircularProgressBarLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MBCircularProgressBarLayer.m; path = Pod/Classes/MBCircularProgressBarLayer.m; sourceTree = "<group>"; };
+		51D9B181D725A6036B75FE4D1E03D5BA /* EdgeInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EdgeInsets.swift; path = Source/EdgeInsets.swift; sourceTree = "<group>"; };
 		68EA9A1D3A9578F7210F5CDD3B2CD86C /* Pods-DCTriOffSeasonSpin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DCTriOffSeasonSpin.debug.xcconfig"; sourceTree = "<group>"; };
+		6F7902049D9DC80F951AC1592131D68B /* SnapKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.xcconfig; sourceTree = "<group>"; };
+		709C9346AB7070A88A8C2F2E99F22688 /* SnapKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SnapKit.modulemap; sourceTree = "<group>"; };
+		70C13476C1F15424F24D757C50025ADC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79CBAD74677AEA4ACB99B60759636BAA /* View+SnapKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "View+SnapKit.swift"; path = "Source/View+SnapKit.swift"; sourceTree = "<group>"; };
 		7BE45DF52ADFCBEFA0B30C201589CD2A /* Pods-DCTriOffSeasonSpin-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DCTriOffSeasonSpin-resources.sh"; sourceTree = "<group>"; };
-		90D8599FCFCA98DB19D3DE0AD81D9CD6 /* SnapKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.xcconfig; sourceTree = "<group>"; };
-		92DD83C2BF9A16815558CBFACD79C938 /* ConstraintRelation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelation.swift; path = Source/ConstraintRelation.swift; sourceTree = "<group>"; };
-		981F67F144EF10B65FC2892E75274520 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7ED4B2FF4B9B41F4525948F1F097618E /* ConstraintRelation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelation.swift; path = Source/ConstraintRelation.swift; sourceTree = "<group>"; };
+		85740C94870B371098734D52CB1397E5 /* MBCircularProgressBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MBCircularProgressBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8905BA0A1A80999FE89134C22805A7E6 /* SnapKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SnapKit-dummy.m"; sourceTree = "<group>"; };
+		92B71F6E92B8E059E16858094B5DBBEE /* MBCircularProgressBar.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MBCircularProgressBar.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		954E43A0FF8E5E083DE91A85822AFD3C /* Debugging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debugging.swift; path = Source/Debugging.swift; sourceTree = "<group>"; };
+		977C96CC43EF9502BBC016D52E5F1DF8 /* ConstraintAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintAttributes.swift; path = Source/ConstraintAttributes.swift; sourceTree = "<group>"; };
 		9851A23E8CCC7C190D8F694DC444A27B /* Pods-DCTriOffSeasonSpin-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DCTriOffSeasonSpin-acknowledgements.markdown"; sourceTree = "<group>"; };
-		9C745F502C842A223464EC61885F02BB /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Source/Constraint.swift; sourceTree = "<group>"; };
-		A03EFFB295211A70F01FAD48D41DF5F3 /* ConstraintMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMaker.swift; path = Source/ConstraintMaker.swift; sourceTree = "<group>"; };
-		A7C496DA4CA3F61B29BB063F74876C70 /* EdgeInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EdgeInsets.swift; path = Source/EdgeInsets.swift; sourceTree = "<group>"; };
-		A804ABA92EC1DA52844E140917F08DF4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B869919EAC3B1E5EF05B0107B595C13C /* LayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraint.swift; path = Source/LayoutConstraint.swift; sourceTree = "<group>"; };
+		A145486DBC4D294340244F3FB1303132 /* MBCircularProgressBar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBCircularProgressBar-umbrella.h"; sourceTree = "<group>"; };
+		A793B5A6FA5F36E66BB187AFACE15094 /* ConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = Source/ConstraintItem.swift; sourceTree = "<group>"; };
+		AF34903D40D971AE3A7E1E204A7C20B2 /* SnapKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SnapKit.swift; path = Source/SnapKit.swift; sourceTree = "<group>"; };
+		B4BECEDCBB426050A40466DD309B355A /* MBCircularProgressBarView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MBCircularProgressBarView.h; path = Pod/Classes/MBCircularProgressBarView.h; sourceTree = "<group>"; };
+		B9A7DEF927ED41986915C3ECBBE03633 /* ViewController+SnapKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ViewController+SnapKit.swift"; path = "Source/ViewController+SnapKit.swift"; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BC9FBD9DB22103AB79D0E2E2E27B65B7 /* MBCircularProgressBar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBCircularProgressBar-dummy.m"; sourceTree = "<group>"; };
+		BDEF94EAED79421E250BB79BC0315B6E /* LayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraint.swift; path = Source/LayoutConstraint.swift; sourceTree = "<group>"; };
+		C298B57B7B754C3FCE1CC3D567906646 /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Source/Constraint.swift; sourceTree = "<group>"; };
 		C4823B4DDC71FD208F78C60A5A85C43D /* Pods-DCTriOffSeasonSpin-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DCTriOffSeasonSpin-dummy.m"; sourceTree = "<group>"; };
-		DEFB846E6A499B21514C1E298F56DE3B /* ConstraintAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintAttributes.swift; path = Source/ConstraintAttributes.swift; sourceTree = "<group>"; };
-		E7ED5648C0C88C2BBB8B1737D3C811DF /* ConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = Source/ConstraintItem.swift; sourceTree = "<group>"; };
+		D6087F1011393E110E06A3788384EA3A /* ConstraintMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMaker.swift; path = Source/ConstraintMaker.swift; sourceTree = "<group>"; };
+		E1F61D30D6ABFE3752B10E776DF4EF10 /* MBCircularProgressBarLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MBCircularProgressBarLayer.h; path = Pod/Classes/MBCircularProgressBarLayer.h; sourceTree = "<group>"; };
+		E36B4980FEAD00D390F538B8E5D09D68 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		015D944CDFFC4F88393A80E7F0F526A9 /* Frameworks */ = {
+		58C69405ADED85C602B139197202D9D0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				613668CF4277135AB80270B44811C480 /* Foundation.framework in Frameworks */,
+				BABA548714C8F0E66412A23371A923FD /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1C49952523EF48E38B1347BCD09EACB7 /* Frameworks */ = {
+		7F38E7E8427EB97D15E0870D471F6DCE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA7F5819CE1BD1C2CE1F420E997700E1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF8AE384E5A1035841194ED221BBB836 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F522E7B2A4A9DFD43C47A2929E57180 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB870EFEFE3347E879E10ECD88A29459 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BD092DF0AA60503F51210F2413FAFFC /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7A30ADABC44CCA0D9BC282B82A6F71FB /* Support Files */ = {
+		043C7D2BEC4D08EBADF91B973E55BB70 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				A804ABA92EC1DA52844E140917F08DF4 /* Info.plist */,
-				56B1FCA085C2AC4CDCEB52E3588F26EB /* SnapKit.modulemap */,
-				90D8599FCFCA98DB19D3DE0AD81D9CD6 /* SnapKit.xcconfig */,
-				079E5EE3CDB090004C84E658BC83AEB7 /* SnapKit-dummy.m */,
-				495929FB6F57FC07CF2233838AD92579 /* SnapKit-prefix.pch */,
-				17ED37A4D4337C9AC445D07BA9E09051 /* SnapKit-umbrella.h */,
+				419F97447F59F5669D4C104622EF10C2 /* MBCircularProgressBar */,
+				9AD0D7195ACCC14FE582E6D7C6A0B28A /* SnapKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		419F97447F59F5669D4C104622EF10C2 /* MBCircularProgressBar */ = {
+			isa = PBXGroup;
+			children = (
+				E1F61D30D6ABFE3752B10E776DF4EF10 /* MBCircularProgressBarLayer.h */,
+				48932F1928ED73714F376D8F5318726D /* MBCircularProgressBarLayer.m */,
+				B4BECEDCBB426050A40466DD309B355A /* MBCircularProgressBarView.h */,
+				46A20B6996ED69C5FF01C27CFD8952CF /* MBCircularProgressBarView.m */,
+				42F8CB8FAE0D3CCDDE051B4CDDC4F4AB /* Support Files */,
+			);
+			path = MBCircularProgressBar;
+			sourceTree = "<group>";
+		};
+		42F8CB8FAE0D3CCDDE051B4CDDC4F4AB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				70C13476C1F15424F24D757C50025ADC /* Info.plist */,
+				3CB9EF1CA7A54D5BFA66FEC005E5D973 /* MBCircularProgressBar.modulemap */,
+				052D59431FAD79ADBE92FA03D251A0B6 /* MBCircularProgressBar.xcconfig */,
+				BC9FBD9DB22103AB79D0E2E2E27B65B7 /* MBCircularProgressBar-dummy.m */,
+				37FC21C1EDB78CF0852D0F8C57E7F2EE /* MBCircularProgressBar-prefix.pch */,
+				A145486DBC4D294340244F3FB1303132 /* MBCircularProgressBar-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/SnapKit";
+			path = "../Target Support Files/MBCircularProgressBar";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -111,36 +181,28 @@
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				AAD880A40C1D678CA44C4575218EDE0E /* Pods */,
-				C5EAF70C03C78145087BAF0A9CFC3B4D /* Products */,
+				043C7D2BEC4D08EBADF91B973E55BB70 /* Pods */,
+				FD12487C22E776868B36B0271F3E23CA /* Products */,
 				DEBD1BB1622634BF01D78FAECF50D6D0 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		AAD880A40C1D678CA44C4575218EDE0E /* Pods */ = {
+		9AD0D7195ACCC14FE582E6D7C6A0B28A /* SnapKit */ = {
 			isa = PBXGroup;
 			children = (
-				B3254E0B2B4708A89CF556DF239CDBA9 /* SnapKit */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		B3254E0B2B4708A89CF556DF239CDBA9 /* SnapKit */ = {
-			isa = PBXGroup;
-			children = (
-				9C745F502C842A223464EC61885F02BB /* Constraint.swift */,
-				DEFB846E6A499B21514C1E298F56DE3B /* ConstraintAttributes.swift */,
-				3061A45F7542E986BCB23EBBD8AD4A13 /* ConstraintDescription.swift */,
-				E7ED5648C0C88C2BBB8B1737D3C811DF /* ConstraintItem.swift */,
-				A03EFFB295211A70F01FAD48D41DF5F3 /* ConstraintMaker.swift */,
-				92DD83C2BF9A16815558CBFACD79C938 /* ConstraintRelation.swift */,
-				415D45FAC3D162C8D3F9CFE592F79E42 /* Debugging.swift */,
-				A7C496DA4CA3F61B29BB063F74876C70 /* EdgeInsets.swift */,
-				B869919EAC3B1E5EF05B0107B595C13C /* LayoutConstraint.swift */,
-				1EA1CFBED61FB63BBC905CD3AFEE402C /* SnapKit.swift */,
-				55BB547CA6D4862CCE70A4B51F1EABAE /* View+SnapKit.swift */,
-				1A877C5C14A8B495ECAB69BE839FFA44 /* ViewController+SnapKit.swift */,
-				7A30ADABC44CCA0D9BC282B82A6F71FB /* Support Files */,
+				C298B57B7B754C3FCE1CC3D567906646 /* Constraint.swift */,
+				977C96CC43EF9502BBC016D52E5F1DF8 /* ConstraintAttributes.swift */,
+				0561A71DB51CD443B33A4309A4F22A53 /* ConstraintDescription.swift */,
+				A793B5A6FA5F36E66BB187AFACE15094 /* ConstraintItem.swift */,
+				D6087F1011393E110E06A3788384EA3A /* ConstraintMaker.swift */,
+				7ED4B2FF4B9B41F4525948F1F097618E /* ConstraintRelation.swift */,
+				954E43A0FF8E5E083DE91A85822AFD3C /* Debugging.swift */,
+				51D9B181D725A6036B75FE4D1E03D5BA /* EdgeInsets.swift */,
+				BDEF94EAED79421E250BB79BC0315B6E /* LayoutConstraint.swift */,
+				AF34903D40D971AE3A7E1E204A7C20B2 /* SnapKit.swift */,
+				79CBAD74677AEA4ACB99B60759636BAA /* View+SnapKit.swift */,
+				B9A7DEF927ED41986915C3ECBBE03633 /* ViewController+SnapKit.swift */,
+				DC22A34FE92174C7B7B0096F44389DEA /* Support Files */,
 			);
 			path = SnapKit;
 			sourceTree = "<group>";
@@ -179,13 +241,18 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		C5EAF70C03C78145087BAF0A9CFC3B4D /* Products */ = {
+		DC22A34FE92174C7B7B0096F44389DEA /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				3A16E5765B0E23F051BF436AB1D1C62A /* Pods_DCTriOffSeasonSpin.framework */,
-				981F67F144EF10B65FC2892E75274520 /* SnapKit.framework */,
+				E36B4980FEAD00D390F538B8E5D09D68 /* Info.plist */,
+				709C9346AB7070A88A8C2F2E99F22688 /* SnapKit.modulemap */,
+				6F7902049D9DC80F951AC1592131D68B /* SnapKit.xcconfig */,
+				8905BA0A1A80999FE89134C22805A7E6 /* SnapKit-dummy.m */,
+				453FEC6E349E826CBA5B946193F6418F /* SnapKit-prefix.pch */,
+				462AF80F565CEE8395739E323F66577C /* SnapKit-umbrella.h */,
 			);
-			name = Products;
+			name = "Support Files";
+			path = "../Target Support Files/SnapKit";
 			sourceTree = "<group>";
 		};
 		DEBD1BB1622634BF01D78FAECF50D6D0 /* Targets Support Files */ = {
@@ -196,35 +263,56 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		FD12487C22E776868B36B0271F3E23CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				92B71F6E92B8E059E16858094B5DBBEE /* MBCircularProgressBar.bundle */,
+				85740C94870B371098734D52CB1397E5 /* MBCircularProgressBar.framework */,
+				07AF07721B31676ED1C163F3D0A78B67 /* Pods_DCTriOffSeasonSpin.framework */,
+				30991400D10412761F468CAB4CD18B6A /* SnapKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		E93841E1061A113C0FE1BAC4DBFC0C9B /* Headers */ = {
+		1D52174BAE196DBDB2365B5B85C21776 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7202848C5CAF7A1A40BE1D6507ADC046 /* SnapKit-umbrella.h in Headers */,
+				312121025328BE24E60F20E6B1DF8E01 /* SnapKit-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F9C7153519749F6F664DC9DA70301AC1 /* Headers */ = {
+		4853587304680F946577E6AA2168FDC0 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D631FD61A330C4A3CD86F851ACAB093 /* Pods-DCTriOffSeasonSpin-umbrella.h in Headers */,
+				6AA00500F66B0705C25D33A1AC6DD780 /* Pods-DCTriOffSeasonSpin-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC15FA8882E81B15AA15A3554303B95C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8546F815857BF9C93440151A864EB626 /* MBCircularProgressBar-umbrella.h in Headers */,
+				2B95200755F4983D22E37C984284F956 /* MBCircularProgressBarLayer.h in Headers */,
+				EB70BEA373CD78800BE63150747CE860 /* MBCircularProgressBarView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		6EB00EC32048872586230F1C70D26D8A /* SnapKit */ = {
+		0EE4D1733C9CEB7623956542D8238528 /* SnapKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 74B838D90E4D1F9C9E783DA8FF061ADF /* Build configuration list for PBXNativeTarget "SnapKit" */;
+			buildConfigurationList = 5C162D742B1E5560985AE8C83F3FC179 /* Build configuration list for PBXNativeTarget "SnapKit" */;
 			buildPhases = (
-				F736C55A705CDED7B92FC1ACDDC2E1F9 /* Sources */,
-				1C49952523EF48E38B1347BCD09EACB7 /* Frameworks */,
-				E93841E1061A113C0FE1BAC4DBFC0C9B /* Headers */,
+				82761B50DF6BB32D9849A9ED57B20763 /* Sources */,
+				DB870EFEFE3347E879E10ECD88A29459 /* Frameworks */,
+				1D52174BAE196DBDB2365B5B85C21776 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -232,25 +320,62 @@
 			);
 			name = SnapKit;
 			productName = SnapKit;
-			productReference = 981F67F144EF10B65FC2892E75274520 /* SnapKit.framework */;
+			productReference = 30991400D10412761F468CAB4CD18B6A /* SnapKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		D8B0D9920F206EAB9D0F6A7B2E6992F9 /* Pods-DCTriOffSeasonSpin */ = {
+		860A9179BCFD9F1C616D8653DB2B4F91 /* MBCircularProgressBar */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6E1FE7E59E370AF4A764B96E7076568B /* Build configuration list for PBXNativeTarget "Pods-DCTriOffSeasonSpin" */;
+			buildConfigurationList = 9292B5CEC4480FF9860A000BCCC4EA9D /* Build configuration list for PBXNativeTarget "MBCircularProgressBar" */;
 			buildPhases = (
-				1A8F020E7177961851AE50AA8C38BA41 /* Sources */,
-				015D944CDFFC4F88393A80E7F0F526A9 /* Frameworks */,
-				F9C7153519749F6F664DC9DA70301AC1 /* Headers */,
+				0CED5ECE51A4C2D646CC75735EF1CBF0 /* Sources */,
+				CF8AE384E5A1035841194ED221BBB836 /* Frameworks */,
+				479C1B74FA4C4674AC58A0CBDC217DC8 /* Resources */,
+				EC15FA8882E81B15AA15A3554303B95C /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2AECDD50B6CD4DFCA90F578DA8BA3232 /* PBXTargetDependency */,
+				91C55659061E9F3551A2E1576571AA74 /* PBXTargetDependency */,
+			);
+			name = MBCircularProgressBar;
+			productName = MBCircularProgressBar;
+			productReference = 85740C94870B371098734D52CB1397E5 /* MBCircularProgressBar.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8FC4B2785BB68892651401B8A26A15AD /* MBCircularProgressBar-MBCircularProgressBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDC2C33DCA9AB372723E14560E873705 /* Build configuration list for PBXNativeTarget "MBCircularProgressBar-MBCircularProgressBar" */;
+			buildPhases = (
+				A733E3C23F3D8D660A96DF919F3EB865 /* Sources */,
+				7F38E7E8427EB97D15E0870D471F6DCE /* Frameworks */,
+				A934CFE4750C4A4A5F3932B2AC474326 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MBCircularProgressBar-MBCircularProgressBar";
+			productName = "MBCircularProgressBar-MBCircularProgressBar";
+			productReference = 92B71F6E92B8E059E16858094B5DBBEE /* MBCircularProgressBar.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		F19CF455DDEE6AE0DBD7EE5826909088 /* Pods-DCTriOffSeasonSpin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1A35DF444B40C6B973045C93892AA78 /* Build configuration list for PBXNativeTarget "Pods-DCTriOffSeasonSpin" */;
+			buildPhases = (
+				42E07CA7B3E6CA5B44560B747922549E /* Sources */,
+				58C69405ADED85C602B139197202D9D0 /* Frameworks */,
+				4853587304680F946577E6AA2168FDC0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9396CE3865F78C0CE81FA6CA1FC0ED69 /* PBXTargetDependency */,
+				931CCDF0E9518E84A4EA07918732E19D /* PBXTargetDependency */,
 			);
 			name = "Pods-DCTriOffSeasonSpin";
 			productName = "Pods-DCTriOffSeasonSpin";
-			productReference = 3A16E5765B0E23F051BF436AB1D1C62A /* Pods_DCTriOffSeasonSpin.framework */;
+			productReference = 07AF07721B31676ED1C163F3D0A78B67 /* Pods_DCTriOffSeasonSpin.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -270,58 +395,107 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = C5EAF70C03C78145087BAF0A9CFC3B4D /* Products */;
+			productRefGroup = FD12487C22E776868B36B0271F3E23CA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D8B0D9920F206EAB9D0F6A7B2E6992F9 /* Pods-DCTriOffSeasonSpin */,
-				6EB00EC32048872586230F1C70D26D8A /* SnapKit */,
+				860A9179BCFD9F1C616D8653DB2B4F91 /* MBCircularProgressBar */,
+				8FC4B2785BB68892651401B8A26A15AD /* MBCircularProgressBar-MBCircularProgressBar */,
+				F19CF455DDEE6AE0DBD7EE5826909088 /* Pods-DCTriOffSeasonSpin */,
+				0EE4D1733C9CEB7623956542D8238528 /* SnapKit */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXSourcesBuildPhase section */
-		1A8F020E7177961851AE50AA8C38BA41 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
+/* Begin PBXResourcesBuildPhase section */
+		479C1B74FA4C4674AC58A0CBDC217DC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA533673B30ADB489332DF0D03CAE80D /* Pods-DCTriOffSeasonSpin-dummy.m in Sources */,
+				F88D157974522F8674E5DFA82F8B0A2A /* MBCircularProgressBar.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F736C55A705CDED7B92FC1ACDDC2E1F9 /* Sources */ = {
+		A934CFE4750C4A4A5F3932B2AC474326 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0CED5ECE51A4C2D646CC75735EF1CBF0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E396DE5437FB621F3E505F3F0F57EE35 /* Constraint.swift in Sources */,
-				6D7890E72C93FE6AC48C205D5A3E9624 /* ConstraintAttributes.swift in Sources */,
-				321C2F30EC43BB59D4C325BF014E0AA0 /* ConstraintDescription.swift in Sources */,
-				266B51A16F0F26046582A5DAD4A88F07 /* ConstraintItem.swift in Sources */,
-				D4BF2FD9D5536AFFC22CAD599DE3FF6F /* ConstraintMaker.swift in Sources */,
-				EB5F25EA942901DD95B1009E801AC781 /* ConstraintRelation.swift in Sources */,
-				391D570859072A3D3B10A0B1C9FF9062 /* Debugging.swift in Sources */,
-				701BBC70BC5E72C4091D67870AD02929 /* EdgeInsets.swift in Sources */,
-				1CF45AD3D7587C135517FF6CFC9CE7D9 /* LayoutConstraint.swift in Sources */,
-				8C427672DFE564B344DCBBBCFB093703 /* SnapKit-dummy.m in Sources */,
-				730485B80BB411BB09D44215BB4C0610 /* SnapKit.swift in Sources */,
-				B5BFF4C79033BC24051FD2B8F295F284 /* View+SnapKit.swift in Sources */,
-				39C2D92C3A0390F8D3325AB0C664FB3B /* ViewController+SnapKit.swift in Sources */,
+				86C96CE9BF21B8D10756F22C071EFBC5 /* MBCircularProgressBar-dummy.m in Sources */,
+				E912798811F25351DFFFCFEF1B153B2A /* MBCircularProgressBarLayer.m in Sources */,
+				6447B5362DD395075EB2433CEE8C21D4 /* MBCircularProgressBarView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42E07CA7B3E6CA5B44560B747922549E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE1BB0CF10216E4F3C36AC156726E365 /* Pods-DCTriOffSeasonSpin-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82761B50DF6BB32D9849A9ED57B20763 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B263A8BA4FDD8B8BDCCE75C6F413C2C9 /* Constraint.swift in Sources */,
+				057137E901A8C814D4D2DEE188B5C2B1 /* ConstraintAttributes.swift in Sources */,
+				AAB596FD05E0DE5ACA32D59ADCB2296A /* ConstraintDescription.swift in Sources */,
+				64F73DF54872E3D8782675C3018E70A2 /* ConstraintItem.swift in Sources */,
+				ACE6FB38839BEB0A5FA06603C76E5E04 /* ConstraintMaker.swift in Sources */,
+				44B12DCF6CB8E0875C494A258A91E835 /* ConstraintRelation.swift in Sources */,
+				2069416FF6A7E86AEFCF1E44BF29FA92 /* Debugging.swift in Sources */,
+				11E092529EA40CF795D9807E7BB9CFBC /* EdgeInsets.swift in Sources */,
+				B3A2D07FA6B139E8C7FDA1DB717F57E0 /* LayoutConstraint.swift in Sources */,
+				80E68DA3EA59AA44F6D6DD7E8C101697 /* SnapKit-dummy.m in Sources */,
+				0C81589DBD4C2F5738090636A0230170 /* SnapKit.swift in Sources */,
+				AF2519979CEEE23427285309CF346086 /* View+SnapKit.swift in Sources */,
+				BB5DC0D981AED3867EC1FC46474D2709 /* ViewController+SnapKit.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A733E3C23F3D8D660A96DF919F3EB865 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2AECDD50B6CD4DFCA90F578DA8BA3232 /* PBXTargetDependency */ = {
+		91C55659061E9F3551A2E1576571AA74 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "MBCircularProgressBar-MBCircularProgressBar";
+			target = 8FC4B2785BB68892651401B8A26A15AD /* MBCircularProgressBar-MBCircularProgressBar */;
+			targetProxy = EBC59F00882F35808CD4B15930E9008E /* PBXContainerItemProxy */;
+		};
+		931CCDF0E9518E84A4EA07918732E19D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SnapKit;
-			target = 6EB00EC32048872586230F1C70D26D8A /* SnapKit */;
-			targetProxy = 28F5544CF337243A09FD9DFF3E089CDD /* PBXContainerItemProxy */;
+			target = 0EE4D1733C9CEB7623956542D8238528 /* SnapKit */;
+			targetProxy = 99989AB1D783B0B6D559B25E08AA38DB /* PBXContainerItemProxy */;
+		};
+		9396CE3865F78C0CE81FA6CA1FC0ED69 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MBCircularProgressBar;
+			target = 860A9179BCFD9F1C616D8653DB2B4F91 /* MBCircularProgressBar */;
+			targetProxy = 7420A8F1F0CFAEB7D4E6F955A03E5122 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1D24AED3898386BCC4B0FA9B5CADE4E3 /* Release */ = {
+		0E473C86A720CE6B9816A4F6EDE914F3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0523FE48D43A3EF1950FDC12E59223BF /* Pods-DCTriOffSeasonSpin.release.xcconfig */;
 			buildSettings = {
@@ -351,7 +525,73 @@
 			};
 			name = Release;
 		};
-		B828C4B5B3E86453142B2642C01EF9F1 /* Debug */ = {
+		22A01934B92D2905A9D31E0529F05B01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 052D59431FAD79ADBE92FA03D251A0B6 /* MBCircularProgressBar.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MBCircularProgressBar/MBCircularProgressBar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MBCircularProgressBar/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MBCircularProgressBar/MBCircularProgressBar.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = MBCircularProgressBar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3661EFAD0B52D857B693ACD149536F6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F7902049D9DC80F951AC1592131D68B /* SnapKit.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SnapKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SnapKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6A3FCA7ECB0DF14216ECAA345C5CDF67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 052D59431FAD79ADBE92FA03D251A0B6 /* MBCircularProgressBar.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = MBCircularProgressBar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		A358C166DF78D96157EB658376B6A6D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 68EA9A1D3A9578F7210F5CDD3B2CD86C /* Pods-DCTriOffSeasonSpin.debug.xcconfig */;
 			buildSettings = {
@@ -373,6 +613,46 @@
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_NAME = Pods_DCTriOffSeasonSpin;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A4AB4D0F954941052ADE779B709BF51D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 052D59431FAD79ADBE92FA03D251A0B6 /* MBCircularProgressBar.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = MBCircularProgressBar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		A6F38E97A636A43E004A3AC5451431AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F7902049D9DC80F951AC1592131D68B /* SnapKit.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SnapKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SnapKit;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -421,34 +701,6 @@
 			};
 			name = Debug;
 		};
-		C6DA6EF3FEDB3B4D29C905D333FE76F5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 90D8599FCFCA98DB19D3DE0AD81D9CD6 /* SnapKit.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SnapKit/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SnapKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		E43846B588E1892F3093F3B7082B6DFB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -483,9 +735,9 @@
 			};
 			name = Release;
 		};
-		EDACCD314FF1315D9460BFCBF4A37B11 /* Release */ = {
+		FB8734A85D799B88EDD9D8664CAA5DAB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 90D8599FCFCA98DB19D3DE0AD81D9CD6 /* SnapKit.xcconfig */;
+			baseConfigurationReference = 052D59431FAD79ADBE92FA03D251A0B6 /* MBCircularProgressBar.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -494,14 +746,14 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SnapKit/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/MBCircularProgressBar/MBCircularProgressBar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MBCircularProgressBar/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
+				MODULEMAP_FILE = "Target Support Files/MBCircularProgressBar/MBCircularProgressBar.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SnapKit;
+				PRODUCT_NAME = MBCircularProgressBar;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -522,20 +774,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6E1FE7E59E370AF4A764B96E7076568B /* Build configuration list for PBXNativeTarget "Pods-DCTriOffSeasonSpin" */ = {
+		5C162D742B1E5560985AE8C83F3FC179 /* Build configuration list for PBXNativeTarget "SnapKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B828C4B5B3E86453142B2642C01EF9F1 /* Debug */,
-				1D24AED3898386BCC4B0FA9B5CADE4E3 /* Release */,
+				A6F38E97A636A43E004A3AC5451431AD /* Debug */,
+				3661EFAD0B52D857B693ACD149536F6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		74B838D90E4D1F9C9E783DA8FF061ADF /* Build configuration list for PBXNativeTarget "SnapKit" */ = {
+		9292B5CEC4480FF9860A000BCCC4EA9D /* Build configuration list for PBXNativeTarget "MBCircularProgressBar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C6DA6EF3FEDB3B4D29C905D333FE76F5 /* Debug */,
-				EDACCD314FF1315D9460BFCBF4A37B11 /* Release */,
+				22A01934B92D2905A9D31E0529F05B01 /* Debug */,
+				FB8734A85D799B88EDD9D8664CAA5DAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDC2C33DCA9AB372723E14560E873705 /* Build configuration list for PBXNativeTarget "MBCircularProgressBar-MBCircularProgressBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4AB4D0F954941052ADE779B709BF51D /* Debug */,
+				6A3FCA7ECB0DF14216ECAA345C5CDF67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1A35DF444B40C6B973045C93892AA78 /* Build configuration list for PBXNativeTarget "Pods-DCTriOffSeasonSpin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A358C166DF78D96157EB658376B6A6D0 /* Debug */,
+				0E473C86A720CE6B9816A4F6EDE914F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

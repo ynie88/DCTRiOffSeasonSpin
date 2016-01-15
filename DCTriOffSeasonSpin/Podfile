@@ -6,4 +6,5 @@ use_frameworks!
 
 target ‘DCTriOffSeasonSpin’ do
 	pod 'SnapKit', '~> 0.18.0'
+    pod "MBCircularProgressBar"
 end
