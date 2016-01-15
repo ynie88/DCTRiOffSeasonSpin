@@ -16,7 +16,7 @@ struct HelperFunctions {
         let secondsFraction = seconds - Double(Int(seconds))
         let strMinutes = String(format: "%02i", minutes)
         let strSeconds = String(format: ":%02i", Int(seconds))
-        let strSecondsFraction = String(format: "%.01i",Int(secondsFraction * 10.0))
+        let strSecondsFraction = String(format: ".%01i",Int(secondsFraction * 10.0))
         return (strMinutes, strSeconds, strSecondsFraction)
     }
 }

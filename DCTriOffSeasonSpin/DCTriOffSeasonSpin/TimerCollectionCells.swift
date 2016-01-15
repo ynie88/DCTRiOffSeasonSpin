@@ -35,7 +35,7 @@ class TimerCollectionCells: UICollectionViewCell {
     var timer = NSTimer() //make a timer variable, but do do anything yet
     let timeInterval:NSTimeInterval = 00.05
     let timerEnd:NSTimeInterval = 0.0
-    var timeCount:NSTimeInterval = 3.0
+    var timeCount:NSTimeInterval = 0.0
     
     private lazy var minutesLabel:UILabel = {
         let _label              = UILabel(frame: .zero)
@@ -82,7 +82,9 @@ class TimerCollectionCells: UICollectionViewCell {
     private lazy var cadenceLabel: UILabel = {
         let label = UILabel(frame: .zero)
         label.font = self.standardFont
-        label.text = "Cadence Label"
+        label.text = "Cadence Label Cadence Label Cadence Label Cadence Label Cadence Label"
+        label.numberOfLines = 0
+        label.lineBreakMode = NSLineBreakMode.ByWordWrapping
         label.textColor = UIColor.whiteColor()
         label.textAlignment = .Center
         self.contentView.addSubview(label)
@@ -92,7 +94,9 @@ class TimerCollectionCells: UICollectionViewCell {
     private lazy var heartRateZoneLabel: UILabel = {
         let label = UILabel(frame: .zero)
         label.font = self.largeFont
-        label.text = "Heart Rate Zone"
+        label.text = "Heart Rate Zone Heart Rate Zone Heart Rate Zone Heart Rate Zone Heart Rate Zone"
+        label.numberOfLines = 0
+        label.lineBreakMode = NSLineBreakMode.ByWordWrapping
         label.textColor = UIColor.whiteColor()
         label.textAlignment = .Center
         self.contentView.addSubview(label)
@@ -147,11 +151,6 @@ class TimerCollectionCells: UICollectionViewCell {
             make.centerX.equalTo(self.contentView)
             make.top.equalTo(heartRateZoneLabel.snp_bottom).offset(5)
         }
-        
-//        notes.snp_updateConstraints { (make) -> Void in
-//            make.centerX.equalTo(self.contentView)
-//            make.bottom.equalTo(self.contentView).offset(-5)
-//        }
         progressView.snp_updateConstraints { (make) -> Void in
             make.centerX.equalTo(self.contentView)
             make.bottom.equalTo(self.contentView).offset(-5)
@@ -164,10 +163,15 @@ class TimerCollectionCells: UICollectionViewCell {
     
     var maxValue:CGFloat = 0
     
+    func configureLabels(workoutSet:Set) {
+        timeCount = workoutSet.duration
+        cadenceLabel.text = workoutSet.cadence
+        heartRateZoneLabel.text = workoutSet.heartRate
+    }
+    
     func startTimer() {
         contentView.backgroundColor = UIColor.blueColor()
         if !timer.valid{ //prevent more than one timer on the thread
-            timeCount = 5.0
             progressView.maxValue = 100
             maxValue = CGFloat(timeCount)
             progressView.value = 0
@@ -184,7 +188,6 @@ class TimerCollectionCells: UICollectionViewCell {
     
     func resetTimer() {
         timer = NSTimer()
-        timeCount = 5.0
         setTimerLabels()
         timer = NSTimer.scheduledTimerWithTimeInterval(timeInterval,
             target: self,

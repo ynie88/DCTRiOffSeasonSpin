@@ -33,6 +33,7 @@ class TimerCollectionController:UICollectionViewController {
     
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(timerClassReuseID, forIndexPath: indexPath) as! TimerCollectionCells
+        cell.configureLabels(WorkoutSet.sharedInstance.playlist[indexPath.row])
         cell.startTimer()
         if indexPath.row % 3 == 0{
             cell.contentView.backgroundColor = UIColor.blackColor()
@@ -48,7 +49,7 @@ class TimerCollectionController:UICollectionViewController {
     }
     
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 4
+        return WorkoutSet.sharedInstance.playlist.count
     }
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
