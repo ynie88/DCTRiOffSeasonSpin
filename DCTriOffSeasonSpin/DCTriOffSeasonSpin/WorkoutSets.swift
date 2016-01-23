@@ -25,32 +25,32 @@ class WorkoutSet {
         playlist.append(Set(time: "3:00", cad: "Any Cadence", zone: "Easy"))//17-20
         
         //Set 1
-        playlist.append(Set(time: "4:00", cad: "75 RPM", zone: "18 BPM Below threshold"))
+        playlist.append(Set(time: "4:00", cad: "75 RPM", zone: "Low Zone 3"))
         playlist.append(Set(time: "4:00", cad: "Alternating legs", zone: "Zone 2"))
         playlist.append(Set(time: "4:00", cad: "75 RPM", zone: "Zone 3"))
         
         //Set 2
-        playlist.append(Set(time: "4:00", cad: "80 RPM", zone: "15 BPM Below threshold"))
+        playlist.append(Set(time: "4:00", cad: "80 RPM", zone: "High Zone 3"))
         playlist.append(Set(time: "4:00", cad: "Alternating legs", zone: "Zone 2"))
         playlist.append(Set(time: "4:00", cad: "80 RPM", zone: "Zone 3"))
         
         //Set3
-        playlist.append(Set(time: "4:00", cad: "85 RPM", zone: "12 BPM Below threshold"))
+        playlist.append(Set(time: "4:00", cad: "90 RPM", zone: "Threshold Low"))
         playlist.append(Set(time: "4:00", cad: "Alternating legs", zone: "Zone 2"))
         playlist.append(Set(time: "4:00", cad: "85 RPM", zone: "Zone 3"))
         
         //set4
-        playlist.append(Set(time: "4:00", cad: "90 RPM", zone: "9 BPM Below threshold"))
+        playlist.append(Set(time: "4:00", cad: "90 RPM", zone: "Threshold Medium"))
         playlist.append(Set(time: "4:00", cad: "Alternating legs", zone: "Zone 2"))
         playlist.append(Set(time: "4:00", cad: "90 RPM", zone: "Zone 3"))
         
         //set 5
-        playlist.append(Set(time: "4:00", cad: "90 RPM", zone: "6 BPM Below threshold"))
+        playlist.append(Set(time: "4:00", cad: "95 RPM", zone: "Threshold High"))
         playlist.append(Set(time: "4:00", cad: "Alternating legs", zone: "Zone 2"))
         playlist.append(Set(time: "4:00", cad: "90 RPM", zone: "Zone 3"))
         
         //Set 6
-        playlist.append(Set(time: "4:00", cad: "95 RPM", zone: "3 BPM Below threshold"))
+        playlist.append(Set(time: "4:00", cad: "95 RPM", zone: "Threshold High"))
         playlist.append(Set(time: "4:00", cad: "Alternating legs", zone: "Zone 2"))
         playlist.append(Set(time: "4:00", cad: "95 RPM", zone: "Zone 3"))
         
@@ -62,6 +62,19 @@ class WorkoutSet {
         //Set 8
         playlist.append(Set(time: "3:00", cad: "Easy", zone: "Recovery"))
         playlist.append(Set(time: "6:00", cad: "90 RPM", zone: "Threshold"))
+        
+        //Set 9
+        playlist.append(Set(time: "1:45", cad: "90 RPM", zone: "Threshold"))//1
+        playlist.append(Set(time: "0:15", cad: "100 RPM", zone: "Attack"))
+        playlist.append(Set(time: "1:45", cad: "90 RPM", zone: "Threshold"))//2
+        playlist.append(Set(time: "0:15", cad: "100 RPM", zone: "Attack"))
+        playlist.append(Set(time: "1:45", cad: "90 RPM", zone: "Threshold"))//3
+        playlist.append(Set(time: "0:15", cad: "100 RPM", zone: "Attack"))
+        playlist.append(Set(time: "1:45", cad: "90 RPM", zone: "Threshold"))//4
+        playlist.append(Set(time: "0:15", cad: "100 RPM", zone: "Attack"))
+        playlist.append(Set(time: "1:45", cad: "90 RPM", zone: "Threshold"))//5
+        playlist.append(Set(time: "0:15", cad: "100 RPM", zone: "Attack"))
+        
         
         //Cooldown
         playlist.append(Set(time: "4:00", cad: "Easy", zone: "Cooldown!"))
