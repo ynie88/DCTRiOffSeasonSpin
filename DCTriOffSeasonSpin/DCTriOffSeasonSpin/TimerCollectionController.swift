@@ -34,11 +34,23 @@ class TimerCollectionController:UICollectionViewController {
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(timerClassReuseID, forIndexPath: indexPath) as! TimerCollectionCells
         cell.configureLabels(WorkoutSet.sharedInstance.playlist[indexPath.row])
+        if indexPath.row < WorkoutSet.sharedInstance.playlist.count - 1{
+            let set = WorkoutSet.sharedInstance.playlist[indexPath.row + 1]
+            let text = "Coming up: " + set.heartRate + " " + set.cadence + " " + set.strDuration
+            cell.configureNextSet(text)
+        } else {
+            let text = "Take it easy, you've earned it!"
+            cell.configureNextSet(text)
+        }
         cell.startTimer()
         if indexPath.row % 3 == 0{
             cell.contentView.backgroundColor = UIColor.blackColor()
         } else if indexPath.row % 2 == 0 {
             cell.contentView.backgroundColor = UIColor.redColor()
+        } else if indexPath.row % 3 == 0 {
+            cell.contentView.backgroundColor = UIColor.yellowColor()
+        } else if indexPath.row % 5 == 0 {
+            cell.contentView.backgroundColor = UIColor.purpleColor()
         }
         return cell
     }

@@ -127,6 +127,18 @@ class TimerCollectionCells: UICollectionViewCell {
         return progressView
     }()
     
+    private lazy var nextLabel:UILabel = {
+        let label = UILabel(frame: .zero)
+        label.font = self.largeFontThin
+        label.text = "Next Label Next Label Next Label Next Label Next Label "
+        label.numberOfLines = 0
+        label.lineBreakMode = NSLineBreakMode.ByWordWrapping
+        label.textColor = UIColor.whiteColor()
+        label.textAlignment = .Center
+        self.contentView.addSubview(label)
+        return label
+    }()
+    
     override func updateConstraints() {
         secondsLabel.snp_updateConstraints { (make) -> Void in
             make.center.equalTo(self.contentView)
@@ -157,6 +169,13 @@ class TimerCollectionCells: UICollectionViewCell {
             make.width.equalTo(200)
             make.height.equalTo(self.progressView.snp_width)
         }
+        nextLabel.snp_updateConstraints { (make) -> Void in
+            make.centerX.equalTo(self.contentView)
+            make.top.equalTo(self.cadenceLabel.snp_bottom).offset(5)
+            make.leading.equalTo(self.contentView).offset(10)
+            make.trailing.equalTo(self.contentView).offset(-10)
+        }
+        
         
         super.updateConstraints()
     }
@@ -167,6 +186,10 @@ class TimerCollectionCells: UICollectionViewCell {
         timeCount = workoutSet.duration
         cadenceLabel.text = workoutSet.cadence
         heartRateZoneLabel.text = workoutSet.heartRate
+    }
+    
+    func configureNextSet(nextElement:String) {
+        nextLabel.text = nextElement
     }
     
     func startTimer() {
