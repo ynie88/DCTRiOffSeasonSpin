@@ -23,52 +23,108 @@ class WorkoutSet {
         playlist.append(Set(time: "2:00", cad: "Anything Cadence", zone: "Zone 2"))//13-15
         playlist.append(Set(time: "2:00", cad: "3 x 6 sec Accelerations", zone: "Zone 2"))//15-17
         playlist.append(Set(time: "3:00", cad: "Any Cadence", zone: "Easy"))//17-20
-        
-        //Set1
-        playlist.append(Set(time: "5:00", cad: "40 Sec HI, 20 Sec Low", zone: "Threshold/Recovery"))
-        playlist.append(Set(time: "3:00", cad: "Single Leg", zone: "Recovery"))
-        
-        //Set2
-        playlist.append(Set(time: "5:00", cad: "40 Sec HI, 20 Sec Low", zone: "Threshold/Recovery"))
-        playlist.append(Set(time: "3:00", cad: "Single Leg", zone: "Recovery"))
-        
-        //Set3
-        playlist.append(Set(time: "5:00", cad: "40 Sec HI, 20 Sec Low", zone: "Threshold/Recovery"))
-        playlist.append(Set(time: "3:00", cad: "Single Leg", zone: "Recovery"))
-        
-        //Set4
-        playlist.append(Set(time: "5:00", cad: "40 Sec HI, 20 Sec Low", zone: "Threshold/Recovery"))
-        playlist.append(Set(time: "3:00", cad: "Single Leg", zone: "Recovery"))
-        
-        //Set5
-        playlist.append(Set(time: "5:00", cad: "40 Sec HI, 20 Sec Low", zone: "Threshold/Recovery"))
-        
-        //Set6
-        playlist.append(Set(time: "5:00", cad: "80-95", zone: "Mid Zone 3"))
-        playlist.append(Set(time: "4:00", cad: "80-95", zone: "Low Zone 4"))
-        playlist.append(Set(time: "3:00", cad: "80-95", zone: "Mid Zone 4"))
-        playlist.append(Set(time: "2:00", cad: "80-95", zone: "Threshold"))
-        playlist.append(Set(time: "1:00", cad: "80-95", zone: "Max Effort"))
-        playlist.append(Set(time: "5:00", cad: "Any Cadence", zone: "Recovery"))
 
-        //Set7
-        playlist.append(Set(time: "5:00", cad: "80-95", zone: "Mid Zone 3"))
-        playlist.append(Set(time: "4:00", cad: "80-95", zone: "Low Zone 4"))
-        playlist.append(Set(time: "3:00", cad: "80-95", zone: "Mid Zone 4"))
-        playlist.append(Set(time: "2:00", cad: "80-95", zone: "Threshold"))
-        playlist.append(Set(time: "1:00", cad: "80-95", zone: "Max Effort"))
-        playlist.append(Set(time: "5:00", cad: "Any Cadence", zone: "Recovery"))
+        //Set 1
+        playlist.append(Set(time: "5:00", cad: "Hill", zone: "Zone 5"))
+        playlist.append(Set(time: "5:00", cad: "Any Cadence", zone: "Zone 2"))
         
-        //Set8
-        playlist.append(Set(time: "5:00", cad: "80-95", zone: "Mid Zone 3"))
-        playlist.append(Set(time: "4:00", cad: "80-95", zone: "Low Zone 4"))
-        playlist.append(Set(time: "3:00", cad: "80-95", zone: "Mid Zone 4"))
-        playlist.append(Set(time: "2:00", cad: "80-95", zone: "Threshold"))
-        playlist.append(Set(time: "1:00", cad: "80-95", zone: "Max Effort"))
-        playlist.append(Set(time: "5:00", cad: "Any Cadence", zone: "Recovery"))
+        //Set 2
+        playlist.append(Set(time: "5:00", cad: "Hill", zone: "Zone 5"))
+        playlist.append(Set(time: "5:00", cad: "Any Cadence", zone: "Zone 2"))
         
-        //Cooldown
-        playlist.append(Set(time: "4:00", cad: "Easy", zone: "Cooldown!"))
+        //Set 3
+        playlist.append(Set(time: "5:00", cad: "Hill", zone: "Zone 5"))
+        playlist.append(Set(time: "5:00", cad: "Any Cadence", zone: "Zone 2"))
+        
+        //Set 4
+        playlist.append(Set(time: "5:00", cad: "Hill", zone: "Zone 5"))
+        playlist.append(Set(time: "5:00", cad: "Any Cadence", zone: "Zone 2"))
+        
+        //Set 5
+        playlist.append(Set(time: "5:00", cad: "Hill", zone: "Zone 5"))
+        playlist.append(Set(time: "5:00", cad: "Any Cadence", zone: "Zone 2"))
+        
+        
+        //Set 6
+        playlist.append(Set(time: "7:00", cad: "Tempo", zone: "Zone 3"))
+        playlist.append(Set(time: "5:00", cad: "Any Cadence", zone: "Zone 2"))
+        
+        //Set 7
+        playlist.append(Set(time: "7:00", cad: "Tempo", zone: "Zone 3"))
+        playlist.append(Set(time: "5:00", cad: "Any Cadence", zone: "Zone 2"))
+        
+        
+        //Set 8
+        playlist.append(Set(time: "3:00", cad: "95+ RPM", zone: "Zone 4"))
+        playlist.append(Set(time: "3:00", cad: "Any Cadence", zone: "Zone 2"))
+
+        //Set 9
+        playlist.append(Set(time: "3:00", cad: "95+ RPM", zone: "Zone 4"))
+        playlist.append(Set(time: "3:00", cad: "Any Cadence", zone: "Zone 2"))
+        
+        //Set 10
+        playlist.append(Set(time: "3:00", cad: "95+ RPM", zone: "Zone 4"))
+        playlist.append(Set(time: "3:00", cad: "Any Cadence", zone: "Zone 2"))
+        
+        //Set 11
+        playlist.append(Set(time: "0:30", cad: "Fast", zone: "150% FTP"))
+        playlist.append(Set(time: "1:00", cad: "Any Cadence", zone: "Zone 2"))
+        
+        playlist.append(Set(time: "0:30", cad: "Fast", zone: "150% FTP"))
+        playlist.append(Set(time: "1:00", cad: "Any Cadence", zone: "Zone 2"))
+        
+        playlist.append(Set(time: "0:30", cad: "Fast", zone: "150% FTP"))
+        playlist.append(Set(time: "1:00", cad: "Any Cadence", zone: "Zone 2"))
+        
+        playlist.append(Set(time: "0:30", cad: "Fast", zone: "150% FTP"))
+        
+        playlist.append(Set(time: "7:00", cad: "Recovery", zone: "Zone 1/2"))
+        
+        
+//        //Set1
+//        playlist.append(Set(time: "5:00", cad: "40 Sec HI, 20 Sec Low", zone: "Threshold/Recovery"))
+//        playlist.append(Set(time: "3:00", cad: "Single Leg", zone: "Recovery"))
+//        
+//        //Set2
+//        playlist.append(Set(time: "5:00", cad: "40 Sec HI, 20 Sec Low", zone: "Threshold/Recovery"))
+//        playlist.append(Set(time: "3:00", cad: "Single Leg", zone: "Recovery"))
+//        
+//        //Set3
+//        playlist.append(Set(time: "5:00", cad: "40 Sec HI, 20 Sec Low", zone: "Threshold/Recovery"))
+//        playlist.append(Set(time: "3:00", cad: "Single Leg", zone: "Recovery"))
+//        
+//        //Set4
+//        playlist.append(Set(time: "5:00", cad: "40 Sec HI, 20 Sec Low", zone: "Threshold/Recovery"))
+//        playlist.append(Set(time: "3:00", cad: "Single Leg", zone: "Recovery"))
+//        
+//        //Set5
+//        playlist.append(Set(time: "5:00", cad: "40 Sec HI, 20 Sec Low", zone: "Threshold/Recovery"))
+//        
+//        //Set6
+//        playlist.append(Set(time: "5:00", cad: "80-95", zone: "Mid Zone 3"))
+//        playlist.append(Set(time: "4:00", cad: "80-95", zone: "Low Zone 4"))
+//        playlist.append(Set(time: "3:00", cad: "80-95", zone: "Mid Zone 4"))
+//        playlist.append(Set(time: "2:00", cad: "80-95", zone: "Threshold"))
+//        playlist.append(Set(time: "1:00", cad: "80-95", zone: "Max Effort"))
+//        playlist.append(Set(time: "5:00", cad: "Any Cadence", zone: "Recovery"))
+//
+//        //Set7
+//        playlist.append(Set(time: "5:00", cad: "80-95", zone: "Mid Zone 3"))
+//        playlist.append(Set(time: "4:00", cad: "80-95", zone: "Low Zone 4"))
+//        playlist.append(Set(time: "3:00", cad: "80-95", zone: "Mid Zone 4"))
+//        playlist.append(Set(time: "2:00", cad: "80-95", zone: "Threshold"))
+//        playlist.append(Set(time: "1:00", cad: "80-95", zone: "Max Effort"))
+//        playlist.append(Set(time: "5:00", cad: "Any Cadence", zone: "Recovery"))
+//        
+//        //Set8
+//        playlist.append(Set(time: "5:00", cad: "80-95", zone: "Mid Zone 3"))
+//        playlist.append(Set(time: "4:00", cad: "80-95", zone: "Low Zone 4"))
+//        playlist.append(Set(time: "3:00", cad: "80-95", zone: "Mid Zone 4"))
+//        playlist.append(Set(time: "2:00", cad: "80-95", zone: "Threshold"))
+//        playlist.append(Set(time: "1:00", cad: "80-95", zone: "Max Effort"))
+//        
+//        //Cooldown
+//        playlist.append(Set(time: "4:00", cad: "Easy", zone: "Cooldown!"))
         
 //        //Set 1
 //        playlist.append(Set(time: "4:00", cad: "75 RPM", zone: "Low Zone 3"))
