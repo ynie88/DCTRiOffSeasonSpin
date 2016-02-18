@@ -90,7 +90,7 @@ class WorkoutSet {
         
         playlist.append(Set(time: "2:00", cad: "Recovery", zone: "Zone 2"))
         
-        //Set 5
+        //Set 6
         playlist.append(Set(time: "8:00", cad: "75-80", zone: "Zone 3"))//1
         playlist.append(Set(time: "4:00", cad: "75-80", zone: "Zone 4"))
         playlist.append(Set(time: "8:00", cad: "75-80", zone: "Zone 3"))//2
