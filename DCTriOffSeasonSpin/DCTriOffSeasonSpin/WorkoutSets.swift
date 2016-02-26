@@ -23,82 +23,105 @@ class WorkoutSet {
         playlist.append(Set(time: "5:00", cad: "Any Cadence", zone: "Zone 2"))//11-15
 
         //Set1
-        playlist.append(Set(time: "0:45", cad: "Fast", zone: "150% FTP"))//1
-        playlist.append(Set(time: "0:15", cad: "0 Cadence", zone: "Zone 2"))
+        playlist.append(Set(time: "0:50", cad: "Fast", zone: "150% FTP"))//1
+        playlist.append(Set(time: "0:10", cad: "0 Cadence", zone: "Zone 2"))
         
-        playlist.append(Set(time: "0:45", cad: "Fast", zone: "150% FTP"))//2
-        playlist.append(Set(time: "0:15", cad: "0 Cadence", zone: "Zone 2"))
+        playlist.append(Set(time: "0:50", cad: "Fast", zone: "150% FTP"))//2
+        playlist.append(Set(time: "0:10", cad: "0 Cadence", zone: "Zone 2"))
         
-        playlist.append(Set(time: "0:45", cad: "Fast", zone: "150% FTP"))//3
-        playlist.append(Set(time: "0:15", cad: "0 Cadence", zone: "Zone 2"))
+        playlist.append(Set(time: "0:50", cad: "Fast", zone: "150% FTP"))//3
+        playlist.append(Set(time: "0:10", cad: "0 Cadence", zone: "Zone 2"))
+
+        playlist.append(Set(time: "0:50", cad: "Fast", zone: "150% FTP"))//4
+        playlist.append(Set(time: "0:10", cad: "0 Cadence", zone: "Zone 2"))
         
-        playlist.append(Set(time: "0:45", cad: "Fast", zone: "150% FTP"))//4
-        playlist.append(Set(time: "0:15", cad: "0 Cadence", zone: "Zone 2"))
-        
-        playlist.append(Set(time: "0:45", cad: "Fast", zone: "150% FTP"))//5
-        playlist.append(Set(time: "0:15", cad: "0 Cadence", zone: "Zone 2"))
+        playlist.append(Set(time: "0:50", cad: "Fast", zone: "150% FTP"))//5
+        playlist.append(Set(time: "0:10", cad: "0 Cadence", zone: "Zone 2"))
+        playlist.append(Set(time: "2:00", cad: "Recovery", zone: "Zone 1/2"))
         
         //Set2
-        playlist.append(Set(time: "0:45", cad: "Fast", zone: "150% FTP"))//1
-        playlist.append(Set(time: "0:15", cad: "0 Cadence", zone: "Zone 2"))
+        playlist.append(Set(time: "0:50", cad: "Fast", zone: "150% FTP"))//1
+        playlist.append(Set(time: "0:10", cad: "0 Cadence", zone: "Zone 2"))
         
-        playlist.append(Set(time: "0:45", cad: "Fast", zone: "150% FTP"))//2
-        playlist.append(Set(time: "0:15", cad: "0 Cadence", zone: "Zone 2"))
+        playlist.append(Set(time: "0:50", cad: "Fast", zone: "150% FTP"))//2
+        playlist.append(Set(time: "0:10", cad: "0 Cadence", zone: "Zone 2"))
         
-        playlist.append(Set(time: "0:45", cad: "Fast", zone: "150% FTP"))//3
-        playlist.append(Set(time: "0:15", cad: "0 Cadence", zone: "Zone 2"))
+        playlist.append(Set(time: "0:50", cad: "Fast", zone: "150% FTP"))//3
+        playlist.append(Set(time: "0:10", cad: "0 Cadence", zone: "Zone 2"))
         
-        playlist.append(Set(time: "0:45", cad: "Fast", zone: "150% FTP"))//4
-        playlist.append(Set(time: "0:15", cad: "0 Cadence", zone: "Zone 2"))
+        playlist.append(Set(time: "0:50", cad: "Fast", zone: "150% FTP"))//4
+        playlist.append(Set(time: "0:10", cad: "0 Cadence", zone: "Zone 2"))
         
-        playlist.append(Set(time: "0:45", cad: "Fast", zone: "150% FTP"))//5
-        playlist.append(Set(time: "0:15", cad: "0 Cadence", zone: "Zone 2"))
+        playlist.append(Set(time: "0:50", cad: "Fast", zone: "150% FTP"))//5
+        playlist.append(Set(time: "0:10", cad: "0 Cadence", zone: "Zone 2"))
+        playlist.append(Set(time: "2:00", cad: "Recovery", zone: "Zone 1/2"))
         
         //Set3
-        playlist.append(Set(time: "0:45", cad: "Fast", zone: "150% FTP"))//1
-        playlist.append(Set(time: "0:15", cad: "0 Cadence", zone: "Zone 2"))
+        playlist.append(Set(time: "0:50", cad: "Fast", zone: "150% FTP"))//1
+        playlist.append(Set(time: "0:10", cad: "0 Cadence", zone: "Zone 2"))
         
-        playlist.append(Set(time: "0:45", cad: "Fast", zone: "150% FTP"))//2
-        playlist.append(Set(time: "0:15", cad: "0 Cadence", zone: "Zone 2"))
+        playlist.append(Set(time: "0:50", cad: "Fast", zone: "150% FTP"))//2
+        playlist.append(Set(time: "0:10", cad: "0 Cadence", zone: "Zone 2"))
         
-        playlist.append(Set(time: "0:45", cad: "Fast", zone: "150% FTP"))//3
-        playlist.append(Set(time: "0:15", cad: "0 Cadence", zone: "Zone 2"))
+        playlist.append(Set(time: "0:50", cad: "Fast", zone: "150% FTP"))//3
+        playlist.append(Set(time: "0:10", cad: "0 Cadence", zone: "Zone 2"))
         
-        playlist.append(Set(time: "0:45", cad: "Fast", zone: "150% FTP"))//4
-        playlist.append(Set(time: "0:15", cad: "0 Cadence", zone: "Zone 2"))
+        playlist.append(Set(time: "0:50", cad: "Fast", zone: "150% FTP"))//4
+        playlist.append(Set(time: "0:10", cad: "0 Cadence", zone: "Zone 2"))
         
-        playlist.append(Set(time: "0:45", cad: "Fast", zone: "150% FTP"))//5
-        playlist.append(Set(time: "0:15", cad: "0 Cadence", zone: "Zone 2"))
+        playlist.append(Set(time: "0:50", cad: "Fast", zone: "150% FTP"))//5
+        playlist.append(Set(time: "0:10", cad: "0 Cadence", zone: "Zone 2"))
+        playlist.append(Set(time: "2:00", cad: "Recovery", zone: "Zone 1/2"))
         
-        //Set 4
-        playlist.append(Set(time: "8:00", cad: "90+", zone: "Zone 3"))//1
-        playlist.append(Set(time: "4:00", cad: "90+", zone: "Zone 4"))
-        playlist.append(Set(time: "8:00", cad: "90+", zone: "Zone 3"))//2
-        playlist.append(Set(time: "4:00", cad: "90+", zone: "Zone 4"))
-        playlist.append(Set(time: "8:00", cad: "90+", zone: "Zone 3"))//3
-        playlist.append(Set(time: "2:00", cad: "90+", zone: "Zone 4"))
+        //Set4
+        playlist.append(Set(time: "0:50", cad: "Fast", zone: "150% FTP"))//1
+        playlist.append(Set(time: "0:10", cad: "0 Cadence", zone: "Zone 2"))
         
-        playlist.append(Set(time: "2:00", cad: "Recovery", zone: "Zone 2"))
+        playlist.append(Set(time: "0:50", cad: "Fast", zone: "150% FTP"))//2
+        playlist.append(Set(time: "0:10", cad: "0 Cadence", zone: "Zone 2"))
+        
+        playlist.append(Set(time: "0:50", cad: "Fast", zone: "150% FTP"))//3
+        playlist.append(Set(time: "0:10", cad: "0 Cadence", zone: "Zone 2"))
+        
+        playlist.append(Set(time: "0:50", cad: "Fast", zone: "150% FTP"))//4
+        playlist.append(Set(time: "0:10", cad: "0 Cadence", zone: "Zone 2"))
+        
+        playlist.append(Set(time: "0:50", cad: "Fast", zone: "150% FTP"))//5
+        playlist.append(Set(time: "0:10", cad: "0 Cadence", zone: "Zone 2"))
+        playlist.append(Set(time: "2:00", cad: "Recovery", zone: "Zone 1/2"))
         
         //Set 5
-        playlist.append(Set(time: "8:00", cad: "80-85", zone: "Zone 3"))//1
-        playlist.append(Set(time: "4:00", cad: "80-85", zone: "Zone 4"))
-        playlist.append(Set(time: "8:00", cad: "80-85", zone: "Zone 3"))//2
-        playlist.append(Set(time: "4:00", cad: "80-85", zone: "Zone 4"))
-        playlist.append(Set(time: "8:00", cad: "80-85", zone: "Zone 3"))//3
-        playlist.append(Set(time: "2:00", cad: "80-85", zone: "Zone 4"))
-        
-        playlist.append(Set(time: "2:00", cad: "Recovery", zone: "Zone 2"))
+        playlist.append(Set(time: "6:00", cad: "Tempo", zone: "Zone 3"))//1
+        playlist.append(Set(time: "4:00", cad: "Tempo", zone: "Low Zone 4"))
+        playlist.append(Set(time: "3:00", cad: "Tempo", zone: "Mid Zone 4"))//2
+        playlist.append(Set(time: "2:00", cad: "Tempo", zone: "High Zone 4"))
+        playlist.append(Set(time: "1:00", cad: "Tempo", zone: "Max"))//3
+        playlist.append(Set(time: "5:00", cad: "Recovery", zone: "Zone 1/2"))
         
         //Set 6
-        playlist.append(Set(time: "8:00", cad: "75-80", zone: "Zone 3"))//1
-        playlist.append(Set(time: "4:00", cad: "75-80", zone: "Zone 4"))
-        playlist.append(Set(time: "8:00", cad: "75-80", zone: "Zone 3"))//2
-        playlist.append(Set(time: "4:00", cad: "75-80", zone: "Zone 4"))
-        playlist.append(Set(time: "8:00", cad: "75-80", zone: "Zone 3"))//3
-        playlist.append(Set(time: "2:00", cad: "75-80", zone: "Zone 4"))
+        playlist.append(Set(time: "6:00", cad: "Tempo", zone: "Zone 3"))//1
+        playlist.append(Set(time: "4:00", cad: "Tempo", zone: "Low Zone 4"))
+        playlist.append(Set(time: "3:00", cad: "Tempo", zone: "Mid Zone 4"))//2
+        playlist.append(Set(time: "2:00", cad: "Tempo", zone: "High Zone 4"))
+        playlist.append(Set(time: "1:00", cad: "Tempo", zone: "Max"))//3
+        playlist.append(Set(time: "5:00", cad: "Recovery", zone: "Zone 1/2"))
         
-        playlist.append(Set(time: "10:00", cad: "Finished!", zone: "Zone 1/2"))
+        //Set 7
+        playlist.append(Set(time: "6:00", cad: "Tempo", zone: "Zone 3"))//1
+        playlist.append(Set(time: "4:00", cad: "Tempo", zone: "Low Zone 4"))
+        playlist.append(Set(time: "3:00", cad: "Tempo", zone: "Mid Zone 4"))//2
+        playlist.append(Set(time: "2:00", cad: "Tempo", zone: "High Zone 4"))
+        playlist.append(Set(time: "1:00", cad: "Tempo", zone: "Max"))//3
+        playlist.append(Set(time: "5:00", cad: "Recovery", zone: "Zone 1/2"))
+        
+        //Set 8
+        playlist.append(Set(time: "6:00", cad: "Tempo", zone: "Zone 3"))//1
+        playlist.append(Set(time: "4:00", cad: "Tempo", zone: "Low Zone 4"))
+        playlist.append(Set(time: "3:00", cad: "Tempo", zone: "Mid Zone 4"))//2
+        playlist.append(Set(time: "2:00", cad: "Tempo", zone: "High Zone 4"))
+        playlist.append(Set(time: "1:00", cad: "Tempo", zone: "Max"))//3
+        
+        playlist.append(Set(time: "13:00", cad: "Finished!", zone: "Zone 2/3"))
         
         
 //        //Set1

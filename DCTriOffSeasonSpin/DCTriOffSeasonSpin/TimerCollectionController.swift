@@ -31,6 +31,20 @@ class TimerCollectionController:UICollectionViewController {
         super.viewDidLoad()
     }
     
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        
+        guard let flowLayout = collectionView?.collectionViewLayout as? UICollectionViewFlowLayout else {
+            return
+        }
+        
+        if UIInterfaceOrientationIsLandscape(UIApplication.sharedApplication().statusBarOrientation) {
+            flowLayout.itemSize = CGSizeMake(UIScreen.mainScreen().bounds.width, UIScreen.mainScreen().bounds.height)
+        } else {
+            flowLayout.itemSize = CGSizeMake(UIScreen.mainScreen().bounds.width, UIScreen.mainScreen().bounds.height)
+        }
+    }
+    
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(timerClassReuseID, forIndexPath: indexPath) as! TimerCollectionCells
         cell.configureLabels(WorkoutSet.sharedInstance.playlist[indexPath.row])
@@ -43,7 +57,7 @@ class TimerCollectionController:UICollectionViewController {
             cell.configureNextSet(text)
         }
         cell.startTimer()
-        if indexPath.row % 3 == 0{
+        if indexPath.row % 7 == 0{
             cell.contentView.backgroundColor = UIColor.blackColor()
         } else if indexPath.row % 2 == 0 {
             cell.contentView.backgroundColor = UIColor.redColor()
@@ -51,6 +65,8 @@ class TimerCollectionController:UICollectionViewController {
             cell.contentView.backgroundColor = UIColor.yellowColor()
         } else if indexPath.row % 5 == 0 {
             cell.contentView.backgroundColor = UIColor.purpleColor()
+        } else {
+            cell.contentView.backgroundColor = UIColor.greenColor()
         }
         return cell
     }
@@ -64,9 +80,9 @@ class TimerCollectionController:UICollectionViewController {
         return WorkoutSet.sharedInstance.playlist.count
     }
     
-    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-        return CGSizeMake(UIScreen.mainScreen().bounds.width, UIScreen.mainScreen().bounds.height)
-    }
+//    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+//        return CGSizeMake(UIScreen.mainScreen().bounds.width, UIScreen.mainScreen().bounds.height)
+//    }
     
     func shiftOne() {
         currentIndex++
