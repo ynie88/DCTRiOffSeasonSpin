@@ -66,7 +66,7 @@ class TimerCollectionController:UICollectionViewController {
         } else if indexPath.row % 5 == 0 {
             cell.contentView.backgroundColor = UIColor.purpleColor()
         } else {
-            cell.contentView.backgroundColor = UIColor.greenColor()
+            cell.contentView.backgroundColor = UIColor.cyanColor()
         }
         return cell
     }
