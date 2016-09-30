@@ -1,10 +1,23 @@
 # Uncomment this line to define a global platform for your project
-# platform :ios, '8.0'
+ platform :ios, '9.3'
 # Uncomment this line if you're using Swift
 
 use_frameworks!
 
-target ‘DCTriOffSeasonSpin’ do
-	pod 'SnapKit', '~> 0.18.0'
-    pod "MBCircularProgressBar"
+def shared_Pods
+    pod 'SnapKit'
+    pod 'MBCircularProgressBar'
+end
+
+def testing_Pods
+    
+end
+
+target 'DCTriOffSeasonSpin' do
+    shared_Pods
+end
+
+target 'DCTriOffSeasonSpinTests' do
+    shared_Pods
+    testing_Pods
 end

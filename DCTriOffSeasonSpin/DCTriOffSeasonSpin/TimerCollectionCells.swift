@@ -12,19 +12,19 @@ import MBCircularProgressBar
 
 class TimerCollectionCells: UICollectionViewCell {
     static let fontSize:CGFloat = 28.0
-    private var standardFont:UIFont {
+    fileprivate var standardFont:UIFont {
         get {
             return UIFont(name: "HelveticaNeue-Light", size: TimerCollectionCells.fontSize)!
         }
     }
     
-    private var largeFont:UIFont {
+    fileprivate var largeFont:UIFont {
         get {
             return UIFont(name: "HelveticaNeue-Medium", size: TimerCollectionCells.fontSize)!
         }
     }
     
-    private var largeFontThin:UIFont {
+    fileprivate var largeFontThin:UIFont {
         get {
             return UIFont(name: "HelveticaNeue-UltraLight", size: TimerCollectionCells.fontSize)!
         }
@@ -32,109 +32,109 @@ class TimerCollectionCells: UICollectionViewCell {
     
     static let identifier = "TimerCollectionCells"
     
-    var timer = NSTimer() //make a timer variable, but do do anything yet
-    let timeInterval:NSTimeInterval = 00.05
-    let timerEnd:NSTimeInterval = 0.0
-    var timeCount:NSTimeInterval = 0.0
+    var timer = Timer() //make a timer variable, but do do anything yet
+    let timeInterval:TimeInterval = 00.05
+    let timerEnd:TimeInterval = 0.0
+    var timeCount:TimeInterval = 0.0
     
-    private lazy var minutesLabel:UILabel = {
+    fileprivate lazy var minutesLabel:UILabel = {
         let _label              = UILabel(frame: .zero)
         _label.font             = self.standardFont
-        _label.textColor        = UIColor.whiteColor()
+        _label.textColor        = UIColor.white
         self.contentView.addSubview(_label)
         return _label
     }()
-    private lazy var secondsLabel: UILabel = {
+    fileprivate lazy var secondsLabel: UILabel = {
         let _label              = UILabel(frame: .zero)
         _label.font             = self.standardFont
-        _label.textColor       = UIColor.whiteColor()
+        _label.textColor       = UIColor.white
         self.contentView.addSubview(_label)
         return _label
     }()
-    private lazy var microSecondsLabel: UILabel = {
+    fileprivate lazy var microSecondsLabel: UILabel = {
         let _label              = UILabel(frame: .zero)
         _label.font             = self.standardFont
-        _label.textColor       = UIColor.whiteColor()
+        _label.textColor       = UIColor.white
         self.contentView.addSubview(_label)
         return _label
     }()
     
-    private lazy var doneLabel: UILabel = {
+    fileprivate lazy var doneLabel: UILabel = {
         let _label              = UILabel(frame: .zero)
         _label.font             = UIFont(name: "HelveticaNeue-UltraLight", size: 35.0)
         _label.text             = "ALL DONE!"
-        _label.textColor        = UIColor.whiteColor()
-        _label.textAlignment    = .Center
+        _label.textColor        = UIColor.white
+        _label.textAlignment    = .center
         self.contentView.addSubview(_label)
         return _label
     }()
     
-    private lazy var timeRemainingLabel: UILabel = {
+    fileprivate lazy var timeRemainingLabel: UILabel = {
        let label = UILabel(frame: .zero)
         label.font = self.standardFont
         label.text = "Time remaining"
-        label.textColor = UIColor.whiteColor()
-        label.textAlignment = .Center
+        label.textColor = UIColor.white
+        label.textAlignment = .center
         self.contentView.addSubview(label)
         return label
     }()
     
-    private lazy var cadenceLabel: UILabel = {
+    fileprivate lazy var cadenceLabel: UILabel = {
         let label = UILabel(frame: .zero)
         label.font = self.standardFont
         label.text = "Cadence Label Cadence Label Cadence Label Cadence Label Cadence Label"
         label.numberOfLines = 0
-        label.lineBreakMode = NSLineBreakMode.ByWordWrapping
-        label.textColor = UIColor.whiteColor()
-        label.textAlignment = .Center
+        label.lineBreakMode = NSLineBreakMode.byWordWrapping
+        label.textColor = UIColor.white
+        label.textAlignment = .center
         self.contentView.addSubview(label)
         return label
     }()
     
-    private lazy var heartRateZoneLabel: UILabel = {
+    fileprivate lazy var heartRateZoneLabel: UILabel = {
         let label = UILabel(frame: .zero)
         label.font = self.largeFont
         label.text = "Heart Rate Zone Heart Rate Zone Heart Rate Zone Heart Rate Zone Heart Rate Zone"
         label.numberOfLines = 0
-        label.lineBreakMode = NSLineBreakMode.ByWordWrapping
-        label.textColor = UIColor.whiteColor()
-        label.textAlignment = .Center
+        label.lineBreakMode = NSLineBreakMode.byWordWrapping
+        label.textColor = UIColor.white
+        label.textAlignment = .center
         self.contentView.addSubview(label)
         return label
     }()
     
-    private lazy var notes: UILabel = {
+    fileprivate lazy var notes: UILabel = {
         let label = UILabel(frame: .zero)
         label.font = self.largeFontThin
         label.text = "notes label"
-        label.textColor = UIColor.whiteColor()
-        label.textAlignment = .Center
+        label.textColor = UIColor.white
+        label.textAlignment = .center
         self.contentView.addSubview(label)
         return label
     }()
     
-    private lazy var progressView:MBCircularProgressBarView = {
+    fileprivate lazy var progressView:MBCircularProgressBarView = {
        let progressView = MBCircularProgressBarView(frame: .zero)
         progressView.progressAngle = 75
         progressView.progressLineWidth = 15
-        progressView.progressColor = UIColor.whiteColor()
-        progressView.progressStrokeColor = UIColor.whiteColor()
-        progressView.backgroundColor = UIColor.clearColor()
-        progressView.fontColor = UIColor.whiteColor()
+        progressView.progressColor = UIColor.white
+        progressView.progressStrokeColor = UIColor.white
+        progressView.backgroundColor = UIColor.clear
+        progressView.fontColor = UIColor.white
         progressView.unitString = "%"
         
         self.contentView.addSubview(progressView)
         return progressView
     }()
     
-    private lazy var nextLabel:UILabel = {
+    fileprivate lazy var nextLabel:UILabel = {
         let label = UILabel(frame: .zero)
         label.font = self.largeFontThin
         label.text = "Next Label Next Label Next Label Next Label Next Label "
         label.numberOfLines = 0
-        label.lineBreakMode = NSLineBreakMode.ByWordWrapping
-        label.textColor = UIColor.whiteColor()
-        label.textAlignment = .Center
+        label.lineBreakMode = NSLineBreakMode.byWordWrapping
+        label.textColor = UIColor.white
+        label.textAlignment = .center
         self.contentView.addSubview(label)
         return label
     }()
@@ -182,26 +182,26 @@ class TimerCollectionCells: UICollectionViewCell {
     
     var maxValue:CGFloat = 0
     
-    func configureLabels(workoutSet:Set) {
+    func configureLabels(_ workoutSet:Set) {
         timeCount = workoutSet.duration
         cadenceLabel.text = workoutSet.cadence
         heartRateZoneLabel.text = workoutSet.heartRate
     }
     
-    func configureNextSet(nextElement:String) {
+    func configureNextSet(_ nextElement:String) {
         nextLabel.text = nextElement
     }
     
     func startTimer() {
-        contentView.backgroundColor = UIColor.blueColor()
-        if !timer.valid{ //prevent more than one timer on the thread
+        contentView.backgroundColor = UIColor.blue
+        if !timer.isValid{ //prevent more than one timer on the thread
             progressView.maxValue = 100
             maxValue = CGFloat(timeCount)
             progressView.value = 0
             setTimerLabels()
-            timer = NSTimer.scheduledTimerWithTimeInterval(timeInterval,
+            timer = Timer.scheduledTimer(timeInterval: timeInterval,
                 target: self,
-                selector: "timerDidEnd:",
+                selector: #selector(TimerCollectionCells.timerDidEnd(_:)),
                 userInfo: "Timer Done!!",
                 repeats: true) //repeating timer in the second iteration
         }
@@ -210,11 +210,11 @@ class TimerCollectionCells: UICollectionViewCell {
     }
     
     func resetTimer() {
-        timer = NSTimer()
+        timer = Timer()
         setTimerLabels()
-        timer = NSTimer.scheduledTimerWithTimeInterval(timeInterval,
+        timer = Timer.scheduledTimer(timeInterval: timeInterval,
             target: self,
-            selector: "timerDidEnd:",
+            selector: #selector(TimerCollectionCells.timerDidEnd(_:)),
             userInfo: "Timer Done!!",
             repeats: true) //repeating timer in the second iteration
     }
@@ -223,11 +223,11 @@ class TimerCollectionCells: UICollectionViewCell {
         timer.invalidate()
     }
     
-    func timerDidEnd(timer:NSTimer){
+    func timerDidEnd(_ timer:Timer){
         timeCount = timeCount - timeInterval
         if timeCount <= 0 {  //test for target time reached.
             //addDoneLabel()
-            NSNotificationCenter.defaultCenter().postNotificationName(kNotificationIdentifierForward, object: nil)
+            NotificationCenter.default.post(name: Notification.Name(rawValue: kNotificationIdentifierForward), object: nil)
             timer.invalidate()
         } else { //update the time on the clock if not reached
             setTimerLabels()
@@ -243,9 +243,9 @@ class TimerCollectionCells: UICollectionViewCell {
     }
     
     func addDoneLabel() {
-        minutesLabel.hidden = true
-        secondsLabel.hidden = true
-        microSecondsLabel.hidden = true
+        minutesLabel.isHidden = true
+        secondsLabel.isHidden = true
+        microSecondsLabel.isHidden = true
         
         doneLabel.snp_updateConstraints { (make) -> Void in
             make.center.equalTo(self)

@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 struct HelperFunctions {
-    static func timeString(time:NSTimeInterval) -> (String, String, String) {
+    static func timeString(_ time:TimeInterval) -> (String, String, String) {
         let minutes = Int(time) / 60
         let seconds = time - Double(minutes) * 60
         let secondsFraction = seconds - Double(Int(seconds))

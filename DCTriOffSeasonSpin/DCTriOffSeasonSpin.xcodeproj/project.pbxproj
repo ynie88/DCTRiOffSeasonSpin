@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3364EE2048909CB1945C559F /* Pods_DCTriOffSeasonSpin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CE03498506DDE5AB8864C5C /* Pods_DCTriOffSeasonSpin.framework */; };
 		4C18C88B1C1B7E2B006FBB13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C18C88A1C1B7E2B006FBB13 /* AppDelegate.swift */; };
 		4C18C88D1C1B7E2B006FBB13 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C18C88C1C1B7E2B006FBB13 /* ViewController.swift */; };
 		4C18C8901C1B7E2B006FBB13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C18C88E1C1B7E2B006FBB13 /* Main.storyboard */; };
@@ -19,6 +18,8 @@
 		4C2770461C1FA091005D12ED /* TimerCollectionCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2770451C1FA091005D12ED /* TimerCollectionCells.swift */; };
 		4C2770481C1FA0BB005D12ED /* WorkoutSets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2770471C1FA0BB005D12ED /* WorkoutSets.swift */; };
 		4CFC61BE1C48796F000B4061 /* HelperFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFC61BD1C48796F000B4061 /* HelperFunctions.swift */; };
+		525BD7FF698D2C3C52054906 /* Pods_DCTriOffSeasonSpin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C703C3E13356B17627468CA /* Pods_DCTriOffSeasonSpin.framework */; };
+		ED831F24ED2B59598DC2FEC0 /* Pods_DCTriOffSeasonSpinTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB2E7455F8B953901DB85299 /* Pods_DCTriOffSeasonSpinTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E1C074DF2E7D2593109129A /* Pods-DCTriOffSeasonSpinTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DCTriOffSeasonSpinTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DCTriOffSeasonSpinTests/Pods-DCTriOffSeasonSpinTests.debug.xcconfig"; sourceTree = "<group>"; };
+		47E2F30A4237514B621E8FF0 /* Pods-DCTriOffSeasonSpin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DCTriOffSeasonSpin.release.xcconfig"; path = "Pods/Target Support Files/Pods-DCTriOffSeasonSpin/Pods-DCTriOffSeasonSpin.release.xcconfig"; sourceTree = "<group>"; };
 		4C18C8871C1B7E2B006FBB13 /* DCTriOffSeasonSpin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DCTriOffSeasonSpin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C18C88A1C1B7E2B006FBB13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C18C88C1C1B7E2B006FBB13 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,9 +60,10 @@
 		4C2770471C1FA0BB005D12ED /* WorkoutSets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutSets.swift; sourceTree = "<group>"; };
 		4C9FC77C1C4893D900188166 /* DCTriOffSeasonSpin-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DCTriOffSeasonSpin-Header.h"; sourceTree = "<group>"; };
 		4CFC61BD1C48796F000B4061 /* HelperFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperFunctions.swift; sourceTree = "<group>"; };
-		6CE03498506DDE5AB8864C5C /* Pods_DCTriOffSeasonSpin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DCTriOffSeasonSpin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C07B4328147E6B0B4F7A961B /* Pods-DCTriOffSeasonSpin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DCTriOffSeasonSpin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DCTriOffSeasonSpin/Pods-DCTriOffSeasonSpin.debug.xcconfig"; sourceTree = "<group>"; };
-		EAFBC06522E5DFA671795703 /* Pods-DCTriOffSeasonSpin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DCTriOffSeasonSpin.release.xcconfig"; path = "Pods/Target Support Files/Pods-DCTriOffSeasonSpin/Pods-DCTriOffSeasonSpin.release.xcconfig"; sourceTree = "<group>"; };
+		547D8688DD57CF13EC658E20 /* Pods-DCTriOffSeasonSpinTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DCTriOffSeasonSpinTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DCTriOffSeasonSpinTests/Pods-DCTriOffSeasonSpinTests.release.xcconfig"; sourceTree = "<group>"; };
+		7C703C3E13356B17627468CA /* Pods_DCTriOffSeasonSpin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DCTriOffSeasonSpin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEAC755766749058B56AF6B7 /* Pods-DCTriOffSeasonSpin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DCTriOffSeasonSpin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DCTriOffSeasonSpin/Pods-DCTriOffSeasonSpin.debug.xcconfig"; sourceTree = "<group>"; };
+		FB2E7455F8B953901DB85299 /* Pods_DCTriOffSeasonSpinTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DCTriOffSeasonSpinTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3364EE2048909CB1945C559F /* Pods_DCTriOffSeasonSpin.framework in Frameworks */,
+				525BD7FF698D2C3C52054906 /* Pods_DCTriOffSeasonSpin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED831F24ED2B59598DC2FEC0 /* Pods_DCTriOffSeasonSpinTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +93,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		352BEF72083CD078EB917E41 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7C703C3E13356B17627468CA /* Pods_DCTriOffSeasonSpin.framework */,
+				FB2E7455F8B953901DB85299 /* Pods_DCTriOffSeasonSpinTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4C18C87E1C1B7E2B006FBB13 = {
 			isa = PBXGroup;
 			children = (
@@ -95,8 +109,8 @@
 				4C18C89E1C1B7E2B006FBB13 /* DCTriOffSeasonSpinTests */,
 				4C18C8A91C1B7E2B006FBB13 /* DCTriOffSeasonSpinUITests */,
 				4C18C8881C1B7E2B006FBB13 /* Products */,
-				B2905372CC21C77353A6F613 /* Pods */,
-				E823BC1303621BC4EBA980CA /* Frameworks */,
+				F2A37A31FB4AE148D9148DA3 /* Pods */,
+				352BEF72083CD078EB917E41 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -146,21 +160,15 @@
 			path = DCTriOffSeasonSpinUITests;
 			sourceTree = "<group>";
 		};
-		B2905372CC21C77353A6F613 /* Pods */ = {
+		F2A37A31FB4AE148D9148DA3 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C07B4328147E6B0B4F7A961B /* Pods-DCTriOffSeasonSpin.debug.xcconfig */,
-				EAFBC06522E5DFA671795703 /* Pods-DCTriOffSeasonSpin.release.xcconfig */,
+				AEAC755766749058B56AF6B7 /* Pods-DCTriOffSeasonSpin.debug.xcconfig */,
+				47E2F30A4237514B621E8FF0 /* Pods-DCTriOffSeasonSpin.release.xcconfig */,
+				2E1C074DF2E7D2593109129A /* Pods-DCTriOffSeasonSpinTests.debug.xcconfig */,
+				547D8688DD57CF13EC658E20 /* Pods-DCTriOffSeasonSpinTests.release.xcconfig */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		E823BC1303621BC4EBA980CA /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				6CE03498506DDE5AB8864C5C /* Pods_DCTriOffSeasonSpin.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,12 +178,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4C18C8AF1C1B7E2B006FBB13 /* Build configuration list for PBXNativeTarget "DCTriOffSeasonSpin" */;
 			buildPhases = (
-				90E426BEEC5B3352184B7C7D /* Check Pods Manifest.lock */,
+				E8469963F4722A5F817CA5AA /* [CP] Check Pods Manifest.lock */,
 				4C18C8831C1B7E2B006FBB13 /* Sources */,
 				4C18C8841C1B7E2B006FBB13 /* Frameworks */,
 				4C18C8851C1B7E2B006FBB13 /* Resources */,
-				3FA9FD7DCDC7597005BECD68 /* Embed Pods Frameworks */,
-				8C8CD86A31EA66F2DA788171 /* Copy Pods Resources */,
+				01AD874AED06E8A5738070D8 /* [CP] Embed Pods Frameworks */,
+				F2075CEEE045420E9C22B01D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -190,9 +198,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4C18C8B21C1B7E2B006FBB13 /* Build configuration list for PBXNativeTarget "DCTriOffSeasonSpinTests" */;
 			buildPhases = (
+				E035D5CB2E4C47FD9C140E22 /* [CP] Check Pods Manifest.lock */,
 				4C18C8971C1B7E2B006FBB13 /* Sources */,
 				4C18C8981C1B7E2B006FBB13 /* Frameworks */,
 				4C18C8991C1B7E2B006FBB13 /* Resources */,
+				5F361F3D5BE85429C2ECBD3B /* [CP] Embed Pods Frameworks */,
+				3EA9C97643CC42581D072C35 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -235,13 +246,16 @@
 					4C18C8861C1B7E2B006FBB13 = {
 						CreatedOnToolsVersion = 7.1.1;
 						DevelopmentTeam = A4Q4BLD4CU;
+						LastSwiftMigration = 0800;
 					};
 					4C18C89A1C1B7E2B006FBB13 = {
 						CreatedOnToolsVersion = 7.1.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = 4C18C8861C1B7E2B006FBB13;
 					};
 					4C18C8A51C1B7E2B006FBB13 = {
 						CreatedOnToolsVersion = 7.1.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = 4C18C8861C1B7E2B006FBB13;
 					};
 				};
@@ -294,14 +308,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3FA9FD7DCDC7597005BECD68 /* Embed Pods Frameworks */ = {
+		01AD874AED06E8A5738070D8 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,34 +323,79 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DCTriOffSeasonSpin/Pods-DCTriOffSeasonSpin-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8C8CD86A31EA66F2DA788171 /* Copy Pods Resources */ = {
+		3EA9C97643CC42581D072C35 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DCTriOffSeasonSpinTests/Pods-DCTriOffSeasonSpinTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F361F3D5BE85429C2ECBD3B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DCTriOffSeasonSpinTests/Pods-DCTriOffSeasonSpinTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E035D5CB2E4C47FD9C140E22 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E8469963F4722A5F817CA5AA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F2075CEEE045420E9C22B01D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DCTriOffSeasonSpin/Pods-DCTriOffSeasonSpin-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		90E426BEEC5B3352184B7C7D /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -490,7 +549,7 @@
 		};
 		4C18C8B01C1B7E2B006FBB13 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C07B4328147E6B0B4F7A961B /* Pods-DCTriOffSeasonSpin.debug.xcconfig */;
+			baseConfigurationReference = AEAC755766749058B56AF6B7 /* Pods-DCTriOffSeasonSpin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -499,12 +558,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = WeddingWire.DCTriOffSeasonSpin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "DCTriOffSeasonSpin/DCTriOffSeasonSpin-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		4C18C8B11C1B7E2B006FBB13 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EAFBC06522E5DFA671795703 /* Pods-DCTriOffSeasonSpin.release.xcconfig */;
+			baseConfigurationReference = 47E2F30A4237514B621E8FF0 /* Pods-DCTriOffSeasonSpin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -513,29 +573,34 @@
 				PRODUCT_BUNDLE_IDENTIFIER = WeddingWire.DCTriOffSeasonSpin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "DCTriOffSeasonSpin/DCTriOffSeasonSpin-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		4C18C8B31C1B7E2B006FBB13 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E1C074DF2E7D2593109129A /* Pods-DCTriOffSeasonSpinTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = DCTriOffSeasonSpinTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = WeddingWire.DCTriOffSeasonSpinTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DCTriOffSeasonSpin.app/DCTriOffSeasonSpin";
 			};
 			name = Debug;
 		};
 		4C18C8B41C1B7E2B006FBB13 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 547D8688DD57CF13EC658E20 /* Pods-DCTriOffSeasonSpinTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = DCTriOffSeasonSpinTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = WeddingWire.DCTriOffSeasonSpinTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DCTriOffSeasonSpin.app/DCTriOffSeasonSpin";
 			};
 			name = Release;
@@ -547,6 +612,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = WeddingWire.DCTriOffSeasonSpinUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = DCTriOffSeasonSpin;
 				USES_XCTRUNNER = YES;
 			};
@@ -559,6 +625,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = WeddingWire.DCTriOffSeasonSpinUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = DCTriOffSeasonSpin;
 				USES_XCTRUNNER = YES;
 			};

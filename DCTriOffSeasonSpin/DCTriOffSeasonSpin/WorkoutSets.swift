@@ -182,14 +182,14 @@ class WorkoutSet {
 
 struct Set {
     let strDuration:String
-    let duration:NSTimeInterval
+    let duration:TimeInterval
     let cadence:String
     let heartRate:String
     
     init(time:String, cad:String, zone: String){
         strDuration = time
-        let timeComponents = time.componentsSeparatedByString(":")
-        if let strMinutes = NSNumberFormatter().numberFromString(timeComponents[0]), strSeconds = NSNumberFormatter().numberFromString(timeComponents[1]){
+        let timeComponents = time.components(separatedBy: ":")
+        if let strMinutes = NumberFormatter().number(from: timeComponents[0]), let strSeconds = NumberFormatter().number(from: timeComponents[1]){
             let minutes = Double(strMinutes) * 60
             let seconds = Double(strSeconds)
             duration = minutes + seconds
