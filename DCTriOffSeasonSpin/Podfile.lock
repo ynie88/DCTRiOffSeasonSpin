@@ -1,15 +1,15 @@
 PODS:
-  - MBCircularProgressBar (0.3.4)
-  - SnapKit (3.0.1)
+  - MBCircularProgressBar (0.3.5)
+  - SnapKit (3.0.2)
 
 DEPENDENCIES:
   - MBCircularProgressBar
   - SnapKit
 
 SPEC CHECKSUMS:
-  MBCircularProgressBar: ff3b8e2f441214d9ee122a24ba0d4d00cc7de881
-  SnapKit: f818b8326d45b4e1c777d0ab27b5c0a3624bfdeb
+  MBCircularProgressBar: 0b795b722a5eb5b0923822f90474e2576a1a7855
+  SnapKit: 2e456761aa92d4d4067a7a5594c18769d451a8ad
 
 PODFILE CHECKSUM: 4f536d09a27b5b7bc8d7394b9b996b82c5db7ee4
 
-COCOAPODS: 1.1.0.rc.2
+COCOAPODS: 1.1.0.rc.3

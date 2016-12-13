@@ -245,8 +245,8 @@
 				TargetAttributes = {
 					4C18C8861C1B7E2B006FBB13 = {
 						CreatedOnToolsVersion = 7.1.1;
-						DevelopmentTeam = A4Q4BLD4CU;
 						LastSwiftMigration = 0800;
+						ProvisioningStyle = Manual;
 					};
 					4C18C89A1C1B7E2B006FBB13 = {
 						CreatedOnToolsVersion = 7.1.1;
@@ -553,6 +553,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = DCTriOffSeasonSpin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = WeddingWire.DCTriOffSeasonSpin;
@@ -568,6 +569,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = DCTriOffSeasonSpin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = WeddingWire.DCTriOffSeasonSpin;

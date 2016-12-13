@@ -1,0 +1,34 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "E5EAFEDA058C4B74A15A6C54FF5E0CE8382ABEB4",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "8d882f9c-1eb5-9548-b98d-bde3435453b0++4974" : {
+      "DVTSourceControlWorkingCopyRepositoryBranchesLocationKey" : "iOS\/branches",
+      "DVTSourceControlWorkingCopyRepositoryTagsLocationKey" : "iOS\/tags",
+      "DVTSourceControlWorkingCopyRepositoryPrimaryBranchLocationKey" : "iOS\/trunk"
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "8d882f9c-1eb5-9548-b98d-bde3435453b0++4974" : 9223372036854775807,
+    "E5EAFEDA058C4B74A15A6C54FF5E0CE8382ABEB4" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "C891CF4B-B1DF-4157-867E-B8D5ECA31B41",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "8d882f9c-1eb5-9548-b98d-bde3435453b0++4974" : "",
+    "E5EAFEDA058C4B74A15A6C54FF5E0CE8382ABEB4" : "DCTRiOffSeasonSpin\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "DCTriOffSeasonSpin",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "DCTriOffSeasonSpin\/DCTriOffSeasonSpin.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/svn.vignetcorp.com\/svn\/Acadia",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8d882f9c-1eb5-9548-b98d-bde3435453b0++4974"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:ynie88\/DCTRiOffSeasonSpin.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E5EAFEDA058C4B74A15A6C54FF5E0CE8382ABEB4"
+    }
+  ]
+}
