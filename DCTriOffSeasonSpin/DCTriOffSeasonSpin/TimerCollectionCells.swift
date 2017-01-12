@@ -12,6 +12,9 @@ import MBCircularProgressBar
 
 class TimerCollectionCells: UICollectionViewCell {
     static let fontSize:CGFloat = 28.0
+    
+    let sizeMultipler = 0.65
+    
     fileprivate var standardFont:UIFont {
         get {
             return UIFont(name: "HelveticaNeue-Light", size: TimerCollectionCells.fontSize)!
@@ -33,27 +36,27 @@ class TimerCollectionCells: UICollectionViewCell {
     static let identifier = "TimerCollectionCells"
     
     var timer = Timer() //make a timer variable, but do do anything yet
-    let timeInterval:TimeInterval = 00.05
+    let timeInterval:TimeInterval = 0.5
     let timerEnd:TimeInterval = 0.0
     var timeCount:TimeInterval = 0.0
     
     fileprivate lazy var minutesLabel:UILabel = {
         let _label              = UILabel(frame: .zero)
-        _label.font             = self.standardFont
+        _label.font             = self.largeFont
         _label.textColor        = UIColor.white
         self.contentView.addSubview(_label)
         return _label
     }()
     fileprivate lazy var secondsLabel: UILabel = {
         let _label              = UILabel(frame: .zero)
-        _label.font             = self.standardFont
+        _label.font             = self.largeFont
         _label.textColor       = UIColor.white
         self.contentView.addSubview(_label)
         return _label
     }()
     fileprivate lazy var microSecondsLabel: UILabel = {
         let _label              = UILabel(frame: .zero)
-        _label.font             = self.standardFont
+        _label.font             = self.largeFont
         _label.textColor       = UIColor.white
         self.contentView.addSubview(_label)
         return _label
@@ -71,8 +74,8 @@ class TimerCollectionCells: UICollectionViewCell {
     
     fileprivate lazy var timeRemainingLabel: UILabel = {
        let label = UILabel(frame: .zero)
-        label.font = self.standardFont
-        label.text = "Time remaining"
+        label.font = self.largeFont
+        label.text = "Time remaining: "
         label.textColor = UIColor.white
         label.textAlignment = .center
         self.contentView.addSubview(label)
@@ -134,46 +137,48 @@ class TimerCollectionCells: UICollectionViewCell {
         label.numberOfLines = 0
         label.lineBreakMode = NSLineBreakMode.byWordWrapping
         label.textColor = UIColor.white
-        label.textAlignment = .center
+        label.textAlignment = .left
         self.contentView.addSubview(label)
         return label
     }()
     
     override func updateConstraints() {
-        secondsLabel.snp_updateConstraints { (make) -> Void in
-            make.center.equalTo(self.contentView)
+        timeRemainingLabel.snp.updateConstraints { (make) -> Void in
+            make.leading.equalTo(self.contentView).offset(20)
+            make.bottom.equalTo(self.contentView).inset(20)
         }
-        minutesLabel.snp_updateConstraints { (make) -> Void in
-            make.centerY.equalTo(secondsLabel)
-            make.right.equalTo(secondsLabel.snp_left).offset(-1.0)
+        minutesLabel.snp.updateConstraints { (make) -> Void in
+            make.leading.equalTo(timeRemainingLabel.snp.trailing).offset(5)
+            make.bottom.equalTo(timeRemainingLabel)
         }
-        microSecondsLabel.snp_updateConstraints { (make) -> Void in
-            make.centerY.equalTo(secondsLabel)
-            make.left.equalTo(secondsLabel.snp_right).offset(1.0)
+        secondsLabel.snp.updateConstraints { (make) -> Void in
+            make.leading.equalTo(minutesLabel.snp.trailing)
+            make.bottom.equalTo(timeRemainingLabel)
         }
-        timeRemainingLabel.snp_updateConstraints { (make) -> Void in
-            make.centerX.equalTo(self.contentView)
-            make.bottom.equalTo(secondsLabel.snp_top).offset(-5)
+        microSecondsLabel.snp.updateConstraints { (make) -> Void in
+            make.leading.equalTo(secondsLabel.snp.trailing)
+            make.bottom.equalTo(timeRemainingLabel)
         }
-        heartRateZoneLabel.snp_updateConstraints { (make) -> Void in
+        heartRateZoneLabel.snp.updateConstraints { (make) -> Void in
             make.centerX.equalTo(self.contentView)
             make.top.equalTo(self.contentView).offset(15)
         }
-        cadenceLabel.snp_updateConstraints { (make) -> Void in
+        cadenceLabel.snp.updateConstraints { (make) -> Void in
             make.centerX.equalTo(self.contentView)
-            make.top.equalTo(heartRateZoneLabel.snp_bottom).offset(5)
+            make.top.equalTo(heartRateZoneLabel.snp.bottom).offset(5)
         }
-        progressView.snp_updateConstraints { (make) -> Void in
-            make.centerX.equalTo(self.contentView)
-            make.bottom.equalTo(self.contentView).offset(-5)
-            make.width.equalTo(200)
-            make.height.equalTo(self.progressView.snp_width)
-        }
-        nextLabel.snp_updateConstraints { (make) -> Void in
-            make.centerX.equalTo(self.contentView)
-            make.top.equalTo(self.cadenceLabel.snp_bottom).offset(5)
+
+        nextLabel.snp.updateConstraints { (make) -> Void in
+            make.top.equalTo(self.cadenceLabel.snp.bottom).offset(5)
+            make.width.equalTo(self.contentView).multipliedBy(0.5)
             make.leading.equalTo(self.contentView).offset(10)
-            make.trailing.equalTo(self.contentView).offset(-10)
+        }
+        
+        progressView.snp.updateConstraints { (make) -> Void in
+            make.centerY.equalTo(self.contentView).offset(30)
+            make.width.equalTo(self.contentView.snp.height).multipliedBy(sizeMultipler)
+            make.height.equalTo(self.progressView.snp.width)
+            make.trailing.equalTo(self.contentView).inset(15)
         }
         
         
@@ -225,13 +230,12 @@ class TimerCollectionCells: UICollectionViewCell {
     
     func timerDidEnd(_ timer:Timer){
         timeCount = timeCount - timeInterval
+        setTimerLabels()
+        progressView.value = (CGFloat(timeCount)/maxValue)*100
         if timeCount <= 0 {  //test for target time reached.
             //addDoneLabel()
             NotificationCenter.default.post(name: Notification.Name(rawValue: kNotificationIdentifierForward), object: nil)
             timer.invalidate()
-        } else { //update the time on the clock if not reached
-            setTimerLabels()
-            progressView.value = (CGFloat(timeCount)/maxValue)*100
         }
     }
     
@@ -247,7 +251,7 @@ class TimerCollectionCells: UICollectionViewCell {
         secondsLabel.isHidden = true
         microSecondsLabel.isHidden = true
         
-        doneLabel.snp_updateConstraints { (make) -> Void in
+        doneLabel.snp.updateConstraints { (make) -> Void in
             make.center.equalTo(self)
         }
         setNeedsUpdateConstraints()

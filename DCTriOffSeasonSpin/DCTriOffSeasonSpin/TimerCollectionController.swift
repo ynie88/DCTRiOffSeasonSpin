@@ -47,7 +47,7 @@ class TimerCollectionController:UICollectionViewController {
         cell.configureLabels(WorkoutSet.sharedInstance.playlist[(indexPath as NSIndexPath).row])
         if (indexPath as NSIndexPath).row < WorkoutSet.sharedInstance.playlist.count - 1{
             let set = WorkoutSet.sharedInstance.playlist[(indexPath as NSIndexPath).row + 1]
-            let text = "Coming up: " + set.heartRate + " " + set.cadence + " " + set.strDuration
+            let text = "Coming up: \n" + set.heartRate + " \n" + set.cadence + " \nDuration: \(set.strDuration)"
             cell.configureNextSet(text)
         } else {
             let text = "Take it easy, you've earned it!"
@@ -76,7 +76,7 @@ class TimerCollectionController:UICollectionViewController {
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: IndexPath) -> CGSize {
-        return CGSize(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
+        return CGSize(width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height)
     }
     
     func shiftOne() {
