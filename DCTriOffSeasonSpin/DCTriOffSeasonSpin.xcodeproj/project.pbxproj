@@ -13,7 +13,6 @@
 		4C18C8921C1B7E2B006FBB13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C18C8911C1B7E2B006FBB13 /* Assets.xcassets */; };
 		4C18C8951C1B7E2B006FBB13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C18C8931C1B7E2B006FBB13 /* LaunchScreen.storyboard */; };
 		4C18C8A01C1B7E2B006FBB13 /* DCTriOffSeasonSpinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C18C89F1C1B7E2B006FBB13 /* DCTriOffSeasonSpinTests.swift */; };
-		4C18C8AB1C1B7E2B006FBB13 /* DCTriOffSeasonSpinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C18C8AA1C1B7E2B006FBB13 /* DCTriOffSeasonSpinUITests.swift */; };
 		4C2770441C1F9F86005D12ED /* TimerCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2770431C1F9F86005D12ED /* TimerCollectionController.swift */; };
 		4C2770461C1FA091005D12ED /* TimerCollectionCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2770451C1FA091005D12ED /* TimerCollectionCells.swift */; };
 		4C2770481C1FA0BB005D12ED /* WorkoutSets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2770471C1FA0BB005D12ED /* WorkoutSets.swift */; };
@@ -24,13 +23,6 @@
 
 /* Begin PBXContainerItemProxy section */
 		4C18C89C1C1B7E2B006FBB13 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4C18C87F1C1B7E2B006FBB13 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4C18C8861C1B7E2B006FBB13;
-			remoteInfo = DCTriOffSeasonSpin;
-		};
-		4C18C8A71C1B7E2B006FBB13 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4C18C87F1C1B7E2B006FBB13 /* Project object */;
 			proxyType = 1;
@@ -52,7 +44,6 @@
 		4C18C89B1C1B7E2B006FBB13 /* DCTriOffSeasonSpinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DCTriOffSeasonSpinTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C18C89F1C1B7E2B006FBB13 /* DCTriOffSeasonSpinTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DCTriOffSeasonSpinTests.swift; sourceTree = "<group>"; };
 		4C18C8A11C1B7E2B006FBB13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4C18C8A61C1B7E2B006FBB13 /* DCTriOffSeasonSpinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DCTriOffSeasonSpinUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C18C8AA1C1B7E2B006FBB13 /* DCTriOffSeasonSpinUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DCTriOffSeasonSpinUITests.swift; sourceTree = "<group>"; };
 		4C18C8AC1C1B7E2B006FBB13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C2770431C1F9F86005D12ED /* TimerCollectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerCollectionController.swift; sourceTree = "<group>"; };
@@ -80,13 +71,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED831F24ED2B59598DC2FEC0 /* Pods_DCTriOffSeasonSpinTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4C18C8A31C1B7E2B006FBB13 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,7 +103,6 @@
 			children = (
 				4C18C8871C1B7E2B006FBB13 /* DCTriOffSeasonSpin.app */,
 				4C18C89B1C1B7E2B006FBB13 /* DCTriOffSeasonSpinTests.xctest */,
-				4C18C8A61C1B7E2B006FBB13 /* DCTriOffSeasonSpinUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -215,24 +198,6 @@
 			productReference = 4C18C89B1C1B7E2B006FBB13 /* DCTriOffSeasonSpinTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		4C18C8A51C1B7E2B006FBB13 /* DCTriOffSeasonSpinUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4C18C8B51C1B7E2B006FBB13 /* Build configuration list for PBXNativeTarget "DCTriOffSeasonSpinUITests" */;
-			buildPhases = (
-				4C18C8A21C1B7E2B006FBB13 /* Sources */,
-				4C18C8A31C1B7E2B006FBB13 /* Frameworks */,
-				4C18C8A41C1B7E2B006FBB13 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4C18C8A81C1B7E2B006FBB13 /* PBXTargetDependency */,
-			);
-			name = DCTriOffSeasonSpinUITests;
-			productName = DCTriOffSeasonSpinUITests;
-			productReference = 4C18C8A61C1B7E2B006FBB13 /* DCTriOffSeasonSpinUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -249,11 +214,6 @@
 						LastSwiftMigration = 0800;
 					};
 					4C18C89A1C1B7E2B006FBB13 = {
-						CreatedOnToolsVersion = 7.1.1;
-						LastSwiftMigration = 0800;
-						TestTargetID = 4C18C8861C1B7E2B006FBB13;
-					};
-					4C18C8A51C1B7E2B006FBB13 = {
 						CreatedOnToolsVersion = 7.1.1;
 						LastSwiftMigration = 0800;
 						TestTargetID = 4C18C8861C1B7E2B006FBB13;
@@ -275,7 +235,6 @@
 			targets = (
 				4C18C8861C1B7E2B006FBB13 /* DCTriOffSeasonSpin */,
 				4C18C89A1C1B7E2B006FBB13 /* DCTriOffSeasonSpinTests */,
-				4C18C8A51C1B7E2B006FBB13 /* DCTriOffSeasonSpinUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -292,13 +251,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		4C18C8991C1B7E2B006FBB13 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4C18C8A41C1B7E2B006FBB13 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -422,14 +374,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4C18C8A21C1B7E2B006FBB13 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4C18C8AB1C1B7E2B006FBB13 /* DCTriOffSeasonSpinUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -437,11 +381,6 @@
 			isa = PBXTargetDependency;
 			target = 4C18C8861C1B7E2B006FBB13 /* DCTriOffSeasonSpin */;
 			targetProxy = 4C18C89C1C1B7E2B006FBB13 /* PBXContainerItemProxy */;
-		};
-		4C18C8A81C1B7E2B006FBB13 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4C18C8861C1B7E2B006FBB13 /* DCTriOffSeasonSpin */;
-			targetProxy = 4C18C8A71C1B7E2B006FBB13 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -564,7 +503,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = FairToMidland.DCTriOffSeasonSpin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "DCTriOffSeasonSpin/DCTriOffSeasonSpin-Header.h";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 3.0.1;
 			};
 			name = Debug;
 		};
@@ -580,7 +519,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = FairToMidland.DCTriOffSeasonSpin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "DCTriOffSeasonSpin/DCTriOffSeasonSpin-Header.h";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 3.0.1;
 			};
 			name = Release;
 		};
@@ -594,7 +533,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = WeddingWire.DCTriOffSeasonSpinTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 3.0.1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DCTriOffSeasonSpin.app/DCTriOffSeasonSpin";
 			};
 			name = Debug;
@@ -609,34 +548,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = WeddingWire.DCTriOffSeasonSpinTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 3.0.1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DCTriOffSeasonSpin.app/DCTriOffSeasonSpin";
-			};
-			name = Release;
-		};
-		4C18C8B61C1B7E2B006FBB13 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = DCTriOffSeasonSpinUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = WeddingWire.DCTriOffSeasonSpinUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = DCTriOffSeasonSpin;
-				USES_XCTRUNNER = YES;
-			};
-			name = Debug;
-		};
-		4C18C8B71C1B7E2B006FBB13 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = DCTriOffSeasonSpinUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = WeddingWire.DCTriOffSeasonSpinUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = DCTriOffSeasonSpin;
-				USES_XCTRUNNER = YES;
 			};
 			name = Release;
 		};
@@ -666,15 +579,6 @@
 			buildConfigurations = (
 				4C18C8B31C1B7E2B006FBB13 /* Debug */,
 				4C18C8B41C1B7E2B006FBB13 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4C18C8B51C1B7E2B006FBB13 /* Build configuration list for PBXNativeTarget "DCTriOffSeasonSpinUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4C18C8B61C1B7E2B006FBB13 /* Debug */,
-				4C18C8B71C1B7E2B006FBB13 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
