@@ -17,11 +17,31 @@ class WorkoutSet {
     }
     
     func addInSet() {
-        //Warm up
-        playlist.append(Set(time: "0:05", cad: "Any Cadence", zone: "Easy"))//0-8
-        playlist.append(Set(time: "0:05", cad: "80-95 RPM", zone: "Zone 2 -> Zone 5"))//8-13
-        playlist.append(Set(time: "0:10", cad: "Anything Cadence", zone: "Zone 2"))//13-15
-        playlist.append(Set(time: "0:05", cad: "3 x 6 sec Accelerations", zone: "Zone 2"))//15-17
+        //warm up
+        playlist.append(Set(time: "15:00", cad: "Any Cadence", zone: "Easy"))//0-15
+        playlist.append(Set(time: "5:00", cad: "80-95 RPM", zone: "Zone 2 -> Zone 5"))//15-20
+        
+        //AR
+        playlist.append(Set(time: "10:00", cad: "Active Recovery", zone: "Zone 2"))//20-30
+        
+        //31-41
+        playlist.append(Set(time: "10:00", cad: "Ramp Up to Test", zone: "Zone 2 -> Sustained"))//31-41
+        
+        //41-1:01
+        playlist.append(Set(time: "20:00", cad: "Sustained Test", zone: "Sustained"))
+        
+        //1:01-1:15
+        playlist.append(Set(time: "15:00", cad: "Break", zone: "Easy"))
+        
+        //1:15-1:20
+        playlist.append(Set(time: "5:00", cad: "Recovery", zone: "Easy"))
+        
+        //1:20-1:45
+        playlist.append(Set(time: "25:00", cad: "Moderate", zone: "Comfortable"))
+        
+        //1:45-2:00
+        playlist.append(Set(time: "15:00", cad: "Cool Down/Pack Up", zone: "Breakfast"))
+        
         
 //        //Warm up
 //        playlist.append(Set(time: "8:00", cad: "Any Cadence", zone: "Easy"))//0-8
